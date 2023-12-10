@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Prog_Tema_4_Ej_04
+{
+    public partial class Prog_Tema_4_Ej_04 : Form
+    {
+        public Prog_Tema_4_Ej_04()
+        {
+            InitializeComponent();
+        }
+
+        private void btnAccion_Click(object sender, EventArgs e)
+        {
+            bool numeroEsnumero = int.TryParse(txtNumeroReal.Text, out int numero);
+            Conversion(numero);
+        }
+
+        public void Conversion(int numero)
+        {
+            if (numero < 0)
+            {
+                numero *= -1;
+            }
+
+            lblResultado.Text = $"El valor absoluto de\n|{txtNumeroReal.Text}|" +
+                $" es {numero}";
+        }
+    }
+}
