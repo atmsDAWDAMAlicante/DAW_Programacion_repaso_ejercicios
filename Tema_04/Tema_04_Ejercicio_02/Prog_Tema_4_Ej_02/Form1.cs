@@ -24,9 +24,8 @@ namespace Prog_Tema_4_Ej_02
 
         public void Comprobar()
         {
-            double numero1, numero2;
-            bool numero1num = double.TryParse(txtNumero1.Text, out numero1);
-            bool numero2num = double.TryParse(txtNumero2.Text, out numero2);
+            bool numero1num = double.TryParse(txtNumero1.Text, out double numero1);
+            bool numero2num = double.TryParse(txtNumero2.Text, out double numero2);
 
             if (numero1num && numero2num)
             {
@@ -40,7 +39,7 @@ namespace Prog_Tema_4_Ej_02
         public void EsDivisible(double numero1, double numero2)
         {
             double resto = numero1 % numero2;
-            string negacion = "";
+            string negacion;
             if (resto == 0)
             {
                 negacion = "";
