@@ -19,24 +19,25 @@ namespace Prog_Tema_4_Ej_01
 
         private void btnSuma_Click(object sender, EventArgs e)
         {
-                // Llamada a la función suma sin parámetros
-                Suma();
-        }
 
-        public void Suma()
-        {
-
-            int numero1, numero2;
-            bool numero1Num = int.TryParse(txtNumero1.Text, out numero1);
-            bool numero2Num = int.TryParse(txtNumero2.Text, out numero2);
+            bool numero1Num = int.TryParse(txtNumero1.Text, out int numero1);
+            bool numero2Num = int.TryParse(txtNumero2.Text, out int numero2);
 
             if ((numero1Num == false) || (numero2Num == false))
             {
-               lblResultado.Text = "Introduce un número";
-            } else
-            {
-                lblResultado.Text = (numero1 + numero2).ToString();
+                lblResultado.Text = "Introduce un número";
             }
+            else
+            {
+                Suma(numero1, numero2);
+            }
+
+        }
+
+        public void Suma(int numero1, int numero2)
+        {
+
+            lblResultado.Text = (numero1 + numero2).ToString();
 
 
 
