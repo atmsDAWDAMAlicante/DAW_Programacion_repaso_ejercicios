@@ -19,13 +19,22 @@ namespace Prog_Tema_3_Ej_01
 
         private void btnAccion_Click(object sender, EventArgs e)
         {
-            string dato = txtDato.Text;
-            if (dato == "2")
+            bool datoesnum = int.TryParse(txtDato.Text, out int dato);
+
+            if (datoesnum )
             {
-                lblResultado.Text = $"El número\nintroducido\nes el {dato}";
+
+                if (dato == 2)
+                {
+                    lblResultado.Text = $"El número\nintroducido\nes el {dato}";
+                } else
+                {
+                    lblResultado.Text = "El número\nintroducido\nNO es el 2";
+                }
+
             } else
             {
-                lblResultado.Text = "El número\nintroducido\nNO es el 2";
+                lblResultado.Text = "Introduce números";
             }
         }
     }
