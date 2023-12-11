@@ -16,5 +16,27 @@ namespace Prog_Tema_4_Ej_07
         {
             InitializeComponent();
         }
+
+        private void btnAccion_Click(object sender, EventArgs e)
+        {
+            bool num1esnum = int.TryParse(txtNumero1.Text, out int numero1);
+            bool num2esnum = int.TryParse(txtNumero2.Text, out int numero2);
+
+            if (num1esnum && num2esnum)
+            {
+                Calcular();
+            }
+
+            else
+            {
+                lblResultado.Text = "Introduce números";
+            }
+
+        }
+
+        public void Calcular()
+        {
+            // operaciones
+        }
     }
 }
