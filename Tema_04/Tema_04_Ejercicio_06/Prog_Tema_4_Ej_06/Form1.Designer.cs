@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNumero1 = new System.Windows.Forms.TextBox();
+            this.txtNumero2 = new System.Windows.Forms.TextBox();
             this.btnAccion = new System.Windows.Forms.Button();
             this.lblTitulo1 = new System.Windows.Forms.Label();
             this.lblTitulo2 = new System.Windows.Forms.Label();
@@ -37,19 +37,19 @@
             this.lblResto = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtNumero1
             // 
-            this.textBox1.Location = new System.Drawing.Point(27, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(99, 26);
-            this.textBox1.TabIndex = 0;
+            this.txtNumero1.Location = new System.Drawing.Point(27, 18);
+            this.txtNumero1.Name = "txtNumero1";
+            this.txtNumero1.Size = new System.Drawing.Size(99, 26);
+            this.txtNumero1.TabIndex = 0;
             // 
-            // textBox2
+            // txtNumero2
             // 
-            this.textBox2.Location = new System.Drawing.Point(27, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(99, 26);
-            this.textBox2.TabIndex = 1;
+            this.txtNumero2.Location = new System.Drawing.Point(27, 68);
+            this.txtNumero2.Name = "txtNumero2";
+            this.txtNumero2.Size = new System.Drawing.Size(99, 26);
+            this.txtNumero2.TabIndex = 1;
             // 
             // btnAccion
             // 
@@ -59,6 +59,7 @@
             this.btnAccion.TabIndex = 2;
             this.btnAccion.Text = "Acción";
             this.btnAccion.UseVisualStyleBackColor = true;
+            this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
             // 
             // lblTitulo1
             // 
@@ -106,8 +107,8 @@
             this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.lblTitulo1);
             this.Controls.Add(this.btnAccion);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNumero2);
+            this.Controls.Add(this.txtNumero1);
             this.Name = "Prog_Tema_4_Ej_06";
             this.Text = "Prog_Tema_4_Ej_06";
             this.ResumeLayout(false);
@@ -117,8 +118,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNumero1;
+        private System.Windows.Forms.TextBox txtNumero2;
         private System.Windows.Forms.Button btnAccion;
         private System.Windows.Forms.Label lblTitulo1;
         private System.Windows.Forms.Label lblTitulo2;
