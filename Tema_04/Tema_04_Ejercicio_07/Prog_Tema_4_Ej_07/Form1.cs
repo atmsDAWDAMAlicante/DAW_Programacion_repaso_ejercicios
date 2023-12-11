@@ -24,7 +24,7 @@ namespace Prog_Tema_4_Ej_07
 
             if (num1esnum && num2esnum)
             {
-                Calcular();
+                IdentificarMenor(numero1, numero2);
             }
 
             else
@@ -34,9 +34,35 @@ namespace Prog_Tema_4_Ej_07
 
         }
 
-        public void Calcular()
+        public void IdentificarMenor(int numero1, int numero2)
         {
-            // operaciones
+
+            if (numero1 > numero2)
+            {
+                Calcular(numero1, numero2);
+            } else
+            {
+                Calcular(numero2, numero1);
+            }
+
+
+
         }
+
+        public void Calcular(int numMayor, int numMenor)
+        {
+            int MCD = 0;
+            for (int i = 1; i < numMenor; i++)
+            {
+                if ((numMayor % i == 0) && (numMenor % i == 0))
+                {
+                    MCD = i;
+                } 
+            }
+
+            lblResultado.Text = $"El Máximo\nComún\nDivisor de\n{numMayor} y {numMenor} es {MCD}";
+        }
+
+
     }
 }
