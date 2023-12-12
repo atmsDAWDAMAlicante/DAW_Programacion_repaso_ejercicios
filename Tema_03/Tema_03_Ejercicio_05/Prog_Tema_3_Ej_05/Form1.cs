@@ -29,6 +29,18 @@ namespace Prog_Tema_3_Ej_05
                 if ((numero1 > numero2) && (numero1 > numero2))
                 {
                     lblResultado.Text = $"{numero1} es mayor que {numero2} y {numero3}";
+                } 
+                else if ((numero2 > numero1) && (numero2  > numero3))
+                {
+                    lblResultado.Text = $"{numero2} es mayor que {numero1} y {numero3}";
+                }
+                else if ((numero3 > numero1) && (numero3 > numero1))
+                {
+                    lblResultado.Text = $"{numero3} es mayor que {numero1} y {numero2}";
+                }
+                else
+                {
+                    lblResultado.Text = $"Los números {numero1}, {numero2}\ny {numero3} son iguales";
                 }
             }
             else
