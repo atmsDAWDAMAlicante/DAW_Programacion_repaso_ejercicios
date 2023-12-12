@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Prog_Tema_3_Ej_04
 {
-    public partial class Form1 : Form
+    public partial class Prog_Tema_3_Ej_04 : Form
     {
-        public Form1()
+        public Prog_Tema_3_Ej_04()
         {
             InitializeComponent();
         }

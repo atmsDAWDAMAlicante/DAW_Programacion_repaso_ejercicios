@@ -16,7 +16,7 @@ namespace Prog_Tema_3_Ej_04
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Prog_Tema_3_Ej_04());
         }
     }
 }

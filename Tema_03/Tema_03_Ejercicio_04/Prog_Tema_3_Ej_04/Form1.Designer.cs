@@ -1,6 +1,6 @@
 ﻿namespace Prog_Tema_3_Ej_04
 {
-    partial class Form1
+    partial class Prog_Tema_3_Ej_04
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -63,11 +63,11 @@
             this.lblResultado.AutoSize = true;
             this.lblResultado.Location = new System.Drawing.Point(12, 184);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(25, 24);
+            this.lblResultado.Size = new System.Drawing.Size(21, 20);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "...";
             // 
-            // Prog_Tema_3_Ej_03
+            // Prog_Tema_3_Ej_04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,8 +76,8 @@
             this.Controls.Add(this.btnAccion);
             this.Controls.Add(this.txtNumero2);
             this.Controls.Add(this.txtNumero1);
-            this.Name = "Prog_Tema_3_Ej_03";
-            this.Text = "Prog_Tema_3_Ej_03";
+            this.Name = "Prog_Tema_3_Ej_04";
+            this.Text = "Prog_Tema_3_Ej_04";
             this.ResumeLayout(false);
             this.PerformLayout();
 
