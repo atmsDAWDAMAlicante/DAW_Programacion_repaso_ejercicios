@@ -48,6 +48,7 @@
             this.btnAccion.TabIndex = 1;
             this.btnAccion.Text = "Acción";
             this.btnAccion.UseVisualStyleBackColor = true;
+            this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
             // 
             // lblResultado
             // 
