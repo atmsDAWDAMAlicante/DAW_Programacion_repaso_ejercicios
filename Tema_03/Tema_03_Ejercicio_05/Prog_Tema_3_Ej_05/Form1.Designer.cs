@@ -1,6 +1,6 @@
 ﻿namespace Prog_Tema_3_Ej_05
 {
-    partial class Form1
+    partial class Prog_Tema_3_Ej_05
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -76,7 +76,7 @@
             this.txtNumero3.Size = new System.Drawing.Size(100, 26);
             this.txtNumero3.TabIndex = 4;
             // 
-            // Form1
+            // Prog_Tema_3_Ej_05
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -86,8 +86,8 @@
             this.Controls.Add(this.btnAccion);
             this.Controls.Add(this.txtNumero2);
             this.Controls.Add(this.txtNumero1);
-            this.Name = "Form1";
-            this.Text = "Prog_Tema_3_Ej_03";
+            this.Name = "Prog_Tema_3_Ej_05";
+            this.Text = "Prog_Tema_3_Ej_05";
             this.ResumeLayout(false);
             this.PerformLayout();
 
