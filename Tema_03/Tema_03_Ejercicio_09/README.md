@@ -1,3 +1,2 @@
-# Programacion_DAW_Repositorio
 # Ejercicio nº 9 del Tema 3 de la asignatura Programación del ciclo DAW Curso 2022-2023
-# Enunciado: Realizar un programa que pida una cantidad de dinero (en pesetas), y muestre en una etiqueta cuantos billetes de 10.000, de 5.000, de 2.000, de 1000 y monedas de 100 y 25 le corresponden. Por ejemplo: 27.375 le corresponde 2 de 10.000, 1 de 5.000, 1 de 2.000, 3 de 100 y 3 de 25. Hacerlo de forma que si corresponde 0 billetes no aparezca.
+**Enunciado**: Realizar un programa que pida una cantidad de dinero (en pesetas), y muestre en una etiqueta cuantos billetes de 10.000, de 5.000, de 2.000, de 1000 y monedas de 100 y 25 le corresponden. Por ejemplo: 27.375 le corresponde 2 de 10.000, 1 de 5.000, 1 de 2.000, 3 de 100 y 3 de 25. Hacerlo de forma que si corresponde 0 billetes no aparezca.
