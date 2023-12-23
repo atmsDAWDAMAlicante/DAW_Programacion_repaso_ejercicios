@@ -36,23 +36,23 @@
             // 
             // txtNumero1
             // 
-            this.txtNumero1.Location = new System.Drawing.Point(62, 59);
+            this.txtNumero1.Location = new System.Drawing.Point(16, 12);
             this.txtNumero1.Name = "txtNumero1";
-            this.txtNumero1.Size = new System.Drawing.Size(238, 26);
+            this.txtNumero1.Size = new System.Drawing.Size(105, 26);
             this.txtNumero1.TabIndex = 0;
             // 
             // txtNumero2
             // 
-            this.txtNumero2.Location = new System.Drawing.Point(62, 140);
+            this.txtNumero2.Location = new System.Drawing.Point(16, 105);
             this.txtNumero2.Name = "txtNumero2";
-            this.txtNumero2.Size = new System.Drawing.Size(238, 26);
+            this.txtNumero2.Size = new System.Drawing.Size(105, 26);
             this.txtNumero2.TabIndex = 1;
             // 
             // btnSuma
             // 
-            this.btnSuma.Location = new System.Drawing.Point(150, 96);
+            this.btnSuma.Location = new System.Drawing.Point(43, 56);
             this.btnSuma.Name = "btnSuma";
-            this.btnSuma.Size = new System.Drawing.Size(66, 34);
+            this.btnSuma.Size = new System.Drawing.Size(52, 34);
             this.btnSuma.TabIndex = 2;
             this.btnSuma.Text = "+";
             this.btnSuma.UseVisualStyleBackColor = true;
@@ -61,7 +61,7 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(146, 198);
+            this.lblResultado.Location = new System.Drawing.Point(59, 146);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(21, 20);
             this.lblResultado.TabIndex = 3;
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 283);
+            this.ClientSize = new System.Drawing.Size(176, 189);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnSuma);
             this.Controls.Add(this.txtNumero2);

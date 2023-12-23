@@ -19,7 +19,11 @@ namespace Prog_Tema_4_Ej_01
 
         private void btnSuma_Click(object sender, EventArgs e)
         {
+            // Adaptación para las pruebas unitarias
+            int resultadoSuma;
 
+            // Manejo del posible error al introducir caracteres no numéricos sin
+            // utilizar excepciones
             bool numero1Num = int.TryParse(txtNumero1.Text, out int numero1);
             bool numero2Num = int.TryParse(txtNumero2.Text, out int numero2);
 
@@ -29,18 +33,21 @@ namespace Prog_Tema_4_Ej_01
             }
             else
             {
-                Suma(numero1, numero2);
+                // Esta función es la que se evaluará en la prueba unitaria
+                resultadoSuma = Suma(numero1, numero2);
+                MuestraResultadoSuma(resultadoSuma);
             }
 
         }
 
-        public void Suma(int numero1, int numero2)
+        public int Suma(int numero1, int numero2)
         {
+            return numero1 + numero2;
+        }
 
-            lblResultado.Text = (numero1 + numero2).ToString();
-
-
-
+        public void MuestraResultadoSuma(int resultado)
+        {
+            lblResultado.Text = resultado.ToString();
         }
 
 
