@@ -1,4 +1,4 @@
-﻿namespace Prog_Tema_4_Ej_01
+﻿namespace Prog_Tema_4_Ej_01_
 {
     partial class Prog_Tema_4_Ej_01
     {
