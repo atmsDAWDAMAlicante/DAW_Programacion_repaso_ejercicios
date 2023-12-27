@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Prog_Tema_4_Ej_01_ // hay que cambiar el nombre del namespace para que no sea el mismo que la clase
+namespace Prog_Tema_4_Ej_01_ 
+// para las pruebas unitarias hay que cambiar el nombre del namespace para que no coincida con el de la clase
 {
     public partial class Prog_Tema_4_Ej_01 : Form
     {
