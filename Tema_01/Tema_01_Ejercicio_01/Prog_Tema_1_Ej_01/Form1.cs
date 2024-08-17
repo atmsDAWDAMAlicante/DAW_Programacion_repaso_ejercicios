@@ -16,5 +16,15 @@ namespace Prog_Tema_1_Ej_01
 			{
 			InitializeComponent();
 			}
+
+		private void btnBoton1_Click(object sender, EventArgs e)
+			{
+			MessageBox.Show("Se ha apretado el primer botón.");
+			}
+
+		private void btnBoton2_Click(object sender, EventArgs e)
+			{
+			MessageBox.Show("Se ha apretado el segundo botón.");
+			}
 		}
 	}
