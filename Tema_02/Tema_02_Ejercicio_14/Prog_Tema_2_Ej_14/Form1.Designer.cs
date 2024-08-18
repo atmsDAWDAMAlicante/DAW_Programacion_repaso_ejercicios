@@ -99,6 +99,7 @@
 			this.btnMayorQue.TabIndex = 3;
 			this.btnMayorQue.Text = ">";
 			this.btnMayorQue.UseVisualStyleBackColor = true;
+			this.btnMayorQue.Click += new System.EventHandler(this.btnMayorQue_Click);
 			// 
 			// btnMenorQue
 			// 
@@ -108,6 +109,7 @@
 			this.btnMenorQue.TabIndex = 4;
 			this.btnMenorQue.Text = "<";
 			this.btnMenorQue.UseVisualStyleBackColor = true;
+			this.btnMenorQue.Click += new System.EventHandler(this.btnMenorQue_Click);
 			// 
 			// btnIgualA
 			// 
@@ -117,6 +119,7 @@
 			this.btnIgualA.TabIndex = 5;
 			this.btnIgualA.Text = "==";
 			this.btnIgualA.UseVisualStyleBackColor = true;
+			this.btnIgualA.Click += new System.EventHandler(this.btnIgualA_Click);
 			// 
 			// btnDistintoA
 			// 
@@ -126,6 +129,7 @@
 			this.btnDistintoA.TabIndex = 6;
 			this.btnDistintoA.Text = "!=";
 			this.btnDistintoA.UseVisualStyleBackColor = true;
+			this.btnDistintoA.Click += new System.EventHandler(this.btnDistintoA_Click);
 			// 
 			// Prog_Tema_2_Ej_14
 			// 
