@@ -92,6 +92,7 @@
 			this.btnPasaraPesetas.TabIndex = 3;
 			this.btnPasaraPesetas.Text = "Pasar a Pesetas";
 			this.btnPasaraPesetas.UseVisualStyleBackColor = false;
+			this.btnPasaraPesetas.Click += new System.EventHandler(this.btnPasaraPesetas_Click);
 			// 
 			// btnPasaraEuros
 			// 
@@ -102,6 +103,7 @@
 			this.btnPasaraEuros.TabIndex = 4;
 			this.btnPasaraEuros.Text = "Pasar a Euros";
 			this.btnPasaraEuros.UseVisualStyleBackColor = false;
+			this.btnPasaraEuros.Click += new System.EventHandler(this.btnPasaraEuros_Click);
 			// 
 			// Prog_Tema_2_Ej_10
 			// 
