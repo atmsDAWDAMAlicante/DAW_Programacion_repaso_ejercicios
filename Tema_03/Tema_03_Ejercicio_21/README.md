@@ -1,0 +1,2 @@
+# Ejercicio nº 21 del Tema 3 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa que lea un numero ‘n’, comprendido entre 1 y 15, y muestre ‘n’ veces la serie de números del 1 al 10.

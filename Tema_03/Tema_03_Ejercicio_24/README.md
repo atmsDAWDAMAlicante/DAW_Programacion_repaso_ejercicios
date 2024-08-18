@@ -1,0 +1,2 @@
+# Ejercicio nº 24 del Tema 3 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa que escriba por pantalla la tabla de multiplicar de un número que tiene que ser >0 y <=100.

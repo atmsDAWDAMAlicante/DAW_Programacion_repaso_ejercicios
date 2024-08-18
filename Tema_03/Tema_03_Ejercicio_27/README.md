@@ -1,0 +1,2 @@
+# Ejercicio nº 27 del Tema 3 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa que nos diga si un número positivo introducido es primo o no lo es. Un número primo es aquel que solo es divisible entre 1 y sí mismo.

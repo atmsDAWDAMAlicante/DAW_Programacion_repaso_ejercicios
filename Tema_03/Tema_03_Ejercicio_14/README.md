@@ -1,0 +1,2 @@
+# Ejercicio nº 14 del Tema 3 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa que sume los 10 primeros números (del 1 al 10). Hacer con ‘for’ y con ‘while’.

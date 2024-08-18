@@ -1,0 +1,3 @@
+# Ejercicio nº 11 del Tema 3 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa en el que introduzcamos una hora con minutos y segundos. Tras validar los datos (que sea una hora correcta) nos escribirá la hora de un segundo después. 
+Validar la hora significa que la hora esté entre 0 y 23, los minutos entre 0 y 59 y los segundos entre 0 y 59, en otro caso nos dará un mensaje de error.

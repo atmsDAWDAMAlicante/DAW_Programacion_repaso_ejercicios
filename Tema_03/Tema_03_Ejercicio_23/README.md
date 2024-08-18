@@ -1,0 +1,3 @@
+# Ejercicio nº 23 del Tema 3 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa en el que vayamos introduciendo el peso de los distintos alumnos de una clase. Los pesos se irán introduciendo con InputBox hasta que se introduzca un peso negativo, de manera similar a como se hace en el ejercicio 15.
+Queremos obtener cuántos alumnos hay en cada uno de los rangos de peso siguientes: (<=50), (>50 y <=65), (>65 y <=80), (>80) así como el tanto por ciento que representan frente al total de alumnos y el peso medio de toda la clase.

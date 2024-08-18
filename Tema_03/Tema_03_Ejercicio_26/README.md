@@ -1,0 +1,2 @@
+# Ejercicio nº 26 del Tema 3 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa que escriba y sume la serie 3,6,9... 99, teniendo en cuenta que solo se pueden escribir 7 números por línea.
