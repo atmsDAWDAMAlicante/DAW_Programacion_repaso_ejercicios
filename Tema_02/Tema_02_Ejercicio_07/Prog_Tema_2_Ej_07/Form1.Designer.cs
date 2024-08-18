@@ -83,6 +83,7 @@
 			this.btnAccion.TabIndex = 2;
 			this.btnAccion.Text = "Acción";
 			this.btnAccion.UseVisualStyleBackColor = false;
+			this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
 			// 
 			// lblResultado
 			// 
@@ -91,7 +92,7 @@
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(118, 31);
 			this.lblResultado.TabIndex = 0;
-			this.lblResultado.Text = "Resultado.";
+			this.lblResultado.Text = "Resultado.\n";
 			// 
 			// Prog_Tema_2_Ej_07
 			// 
