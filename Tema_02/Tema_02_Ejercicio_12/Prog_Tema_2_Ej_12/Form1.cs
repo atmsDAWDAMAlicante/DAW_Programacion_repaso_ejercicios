@@ -16,5 +16,18 @@ namespace Prog_Tema_2_Ej_12
 			{
 			InitializeComponent();
 			}
+
+		private void btnImporte_Click(object sender, EventArgs e)
+			{
+			lblImporte.Text = "Importe:\n";
+			try
+				{
+
+				}
+			catch (FormatException)
+				{
+				MessageBox.Show("Introduzca números.");
+				}
+			}
 		}
 	}
