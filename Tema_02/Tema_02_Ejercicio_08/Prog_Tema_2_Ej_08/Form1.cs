@@ -16,5 +16,10 @@ namespace Prog_Tema_2_Ej_08
 			{
 			InitializeComponent();
 			}
+
+		private void button1_Click(object sender, EventArgs e)
+			{
+
+			}
 		}
 	}
