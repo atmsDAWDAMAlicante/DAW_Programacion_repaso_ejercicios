@@ -43,7 +43,7 @@
 			// 
 			this.lblTitulo.AutoSize = true;
 			this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTitulo.Location = new System.Drawing.Point(33, 27);
+			this.lblTitulo.Location = new System.Drawing.Point(18, 9);
 			this.lblTitulo.Name = "lblTitulo";
 			this.lblTitulo.Size = new System.Drawing.Size(190, 55);
 			this.lblTitulo.TabIndex = 0;
@@ -52,7 +52,7 @@
 			// lblHorasNormales
 			// 
 			this.lblHorasNormales.AutoSize = true;
-			this.lblHorasNormales.Location = new System.Drawing.Point(43, 160);
+			this.lblHorasNormales.Location = new System.Drawing.Point(18, 133);
 			this.lblHorasNormales.Name = "lblHorasNormales";
 			this.lblHorasNormales.Size = new System.Drawing.Size(125, 20);
 			this.lblHorasNormales.TabIndex = 0;
@@ -61,7 +61,7 @@
 			// lblHorasExtra
 			// 
 			this.lblHorasExtra.AutoSize = true;
-			this.lblHorasExtra.Location = new System.Drawing.Point(43, 212);
+			this.lblHorasExtra.Location = new System.Drawing.Point(18, 178);
 			this.lblHorasExtra.Name = "lblHorasExtra";
 			this.lblHorasExtra.Size = new System.Drawing.Size(95, 20);
 			this.lblHorasExtra.TabIndex = 0;
@@ -69,14 +69,14 @@
 			// 
 			// txtHorasNormales
 			// 
-			this.txtHorasNormales.Location = new System.Drawing.Point(174, 160);
+			this.txtHorasNormales.Location = new System.Drawing.Point(174, 127);
 			this.txtHorasNormales.Name = "txtHorasNormales";
 			this.txtHorasNormales.Size = new System.Drawing.Size(100, 26);
 			this.txtHorasNormales.TabIndex = 2;
 			// 
 			// txtHorasExtra
 			// 
-			this.txtHorasExtra.Location = new System.Drawing.Point(174, 212);
+			this.txtHorasExtra.Location = new System.Drawing.Point(174, 172);
 			this.txtHorasExtra.Name = "txtHorasExtra";
 			this.txtHorasExtra.Size = new System.Drawing.Size(100, 26);
 			this.txtHorasExtra.TabIndex = 3;
@@ -84,7 +84,7 @@
 			// lblImporteHoraTrabajada
 			// 
 			this.lblImporteHoraTrabajada.AutoSize = true;
-			this.lblImporteHoraTrabajada.Location = new System.Drawing.Point(43, 97);
+			this.lblImporteHoraTrabajada.Location = new System.Drawing.Point(18, 79);
 			this.lblImporteHoraTrabajada.Name = "lblImporteHoraTrabajada";
 			this.lblImporteHoraTrabajada.Size = new System.Drawing.Size(175, 20);
 			this.lblImporteHoraTrabajada.TabIndex = 0;
@@ -92,7 +92,7 @@
 			// 
 			// txtImporteHoraTrabajada
 			// 
-			this.txtImporteHoraTrabajada.Location = new System.Drawing.Point(221, 97);
+			this.txtImporteHoraTrabajada.Location = new System.Drawing.Point(199, 76);
 			this.txtImporteHoraTrabajada.Name = "txtImporteHoraTrabajada";
 			this.txtImporteHoraTrabajada.Size = new System.Drawing.Size(100, 26);
 			this.txtImporteHoraTrabajada.TabIndex = 1;
@@ -101,7 +101,7 @@
 			// 
 			this.btnCalcular.BackColor = System.Drawing.Color.Turquoise;
 			this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCalcular.Location = new System.Drawing.Point(373, 66);
+			this.btnCalcular.Location = new System.Drawing.Point(18, 232);
 			this.btnCalcular.Name = "btnCalcular";
 			this.btnCalcular.Size = new System.Drawing.Size(227, 57);
 			this.btnCalcular.TabIndex = 4;
@@ -112,7 +112,7 @@
 			// lblResultado
 			// 
 			this.lblResultado.AutoSize = true;
-			this.lblResultado.Location = new System.Drawing.Point(369, 138);
+			this.lblResultado.Location = new System.Drawing.Point(320, 76);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(86, 20);
 			this.lblResultado.TabIndex = 0;
@@ -123,7 +123,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.MediumTurquoise;
-			this.ClientSize = new System.Drawing.Size(664, 321);
+			this.ClientSize = new System.Drawing.Size(698, 321);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnCalcular);
 			this.Controls.Add(this.txtImporteHoraTrabajada);
