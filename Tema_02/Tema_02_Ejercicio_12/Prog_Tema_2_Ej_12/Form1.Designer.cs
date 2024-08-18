@@ -32,9 +32,9 @@
 			this.lblProducto1 = new System.Windows.Forms.Label();
 			this.lblProducto2 = new System.Windows.Forms.Label();
 			this.lblProducto3 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.txtProducto1 = new System.Windows.Forms.TextBox();
+			this.txtProducto2 = new System.Windows.Forms.TextBox();
+			this.txtProducto3 = new System.Windows.Forms.TextBox();
 			this.lblEuro1 = new System.Windows.Forms.Label();
 			this.lblEuro2 = new System.Windows.Forms.Label();
 			this.lblEuro3 = new System.Windows.Forms.Label();
@@ -79,26 +79,26 @@
 			this.lblProducto3.TabIndex = 0;
 			this.lblProducto3.Text = "Producto 3:";
 			// 
-			// textBox1
+			// txtProducto1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(130, 83);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 30);
-			this.textBox1.TabIndex = 1;
+			this.txtProducto1.Location = new System.Drawing.Point(130, 83);
+			this.txtProducto1.Name = "txtProducto1";
+			this.txtProducto1.Size = new System.Drawing.Size(100, 30);
+			this.txtProducto1.TabIndex = 1;
 			// 
-			// textBox2
+			// txtProducto2
 			// 
-			this.textBox2.Location = new System.Drawing.Point(130, 132);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 30);
-			this.textBox2.TabIndex = 2;
+			this.txtProducto2.Location = new System.Drawing.Point(130, 132);
+			this.txtProducto2.Name = "txtProducto2";
+			this.txtProducto2.Size = new System.Drawing.Size(100, 30);
+			this.txtProducto2.TabIndex = 2;
 			// 
-			// textBox3
+			// txtProducto3
 			// 
-			this.textBox3.Location = new System.Drawing.Point(130, 184);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(100, 30);
-			this.textBox3.TabIndex = 3;
+			this.txtProducto3.Location = new System.Drawing.Point(130, 184);
+			this.txtProducto3.Name = "txtProducto3";
+			this.txtProducto3.Size = new System.Drawing.Size(100, 30);
+			this.txtProducto3.TabIndex = 3;
 			// 
 			// lblEuro1
 			// 
@@ -130,9 +130,10 @@
 			// lblImporte
 			// 
 			this.lblImporte.AutoSize = true;
+			this.lblImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblImporte.Location = new System.Drawing.Point(12, 294);
 			this.lblImporte.Name = "lblImporte";
-			this.lblImporte.Size = new System.Drawing.Size(83, 25);
+			this.lblImporte.Size = new System.Drawing.Size(140, 38);
 			this.lblImporte.TabIndex = 0;
 			this.lblImporte.Text = "Importe:\n";
 			// 
@@ -159,9 +160,9 @@
 			this.Controls.Add(this.lblEuro3);
 			this.Controls.Add(this.lblEuro2);
 			this.Controls.Add(this.lblEuro1);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txtProducto3);
+			this.Controls.Add(this.txtProducto2);
+			this.Controls.Add(this.txtProducto1);
 			this.Controls.Add(this.lblProducto3);
 			this.Controls.Add(this.lblProducto2);
 			this.Controls.Add(this.lblProducto1);
@@ -182,9 +183,9 @@
 		private System.Windows.Forms.Label lblProducto1;
 		private System.Windows.Forms.Label lblProducto2;
 		private System.Windows.Forms.Label lblProducto3;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox txtProducto1;
+		private System.Windows.Forms.TextBox txtProducto2;
+		private System.Windows.Forms.TextBox txtProducto3;
 		private System.Windows.Forms.Label lblEuro1;
 		private System.Windows.Forms.Label lblEuro2;
 		private System.Windows.Forms.Label lblEuro3;
