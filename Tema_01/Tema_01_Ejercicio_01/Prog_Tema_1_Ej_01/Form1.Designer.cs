@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 			{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prog_Tema_1_Ej_01));
 			this.btnBoton1 = new System.Windows.Forms.Button();
 			this.btnBoton2 = new System.Windows.Forms.Button();
 			this.lblTitulo = new System.Windows.Forms.Label();
@@ -69,6 +70,8 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.LightSkyBlue;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(546, 235);
 			this.Controls.Add(this.lblTitulo);
 			this.Controls.Add(this.btnBoton2);
