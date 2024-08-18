@@ -56,7 +56,7 @@
 			this.lblNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblNum1.Location = new System.Drawing.Point(27, 81);
 			this.lblNum1.Name = "lblNum1";
-			this.lblNum1.Size = new System.Drawing.Size(109, 24);
+			this.lblNum1.Size = new System.Drawing.Size(91, 20);
 			this.lblNum1.TabIndex = 0;
 			this.lblNum1.Text = "Número 1:";
 			// 
@@ -66,7 +66,7 @@
 			this.lblNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblNum2.Location = new System.Drawing.Point(27, 140);
 			this.lblNum2.Name = "lblNum2";
-			this.lblNum2.Size = new System.Drawing.Size(109, 24);
+			this.lblNum2.Size = new System.Drawing.Size(91, 20);
 			this.lblNum2.TabIndex = 0;
 			this.lblNum2.Text = "Número 2:";
 			// 
@@ -76,7 +76,7 @@
 			this.lblNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblNum3.Location = new System.Drawing.Point(27, 194);
 			this.lblNum3.Name = "lblNum3";
-			this.lblNum3.Size = new System.Drawing.Size(109, 24);
+			this.lblNum3.Size = new System.Drawing.Size(91, 20);
 			this.lblNum3.TabIndex = 0;
 			this.lblNum3.Text = "Número 3:";
 			// 
@@ -111,7 +111,7 @@
 			this.btnAccion.TabIndex = 4;
 			this.btnAccion.Text = "Acción";
 			this.btnAccion.UseVisualStyleBackColor = false;
-			this.btnAccion.Click += new System.EventHandler(this.button1_Click);
+			this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
 			// 
 			// lblResultado
 			// 
@@ -119,7 +119,7 @@
 			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.Location = new System.Drawing.Point(297, 133);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(115, 24);
+			this.lblResultado.Size = new System.Drawing.Size(96, 20);
 			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "Resultado:\n";
 			// 
