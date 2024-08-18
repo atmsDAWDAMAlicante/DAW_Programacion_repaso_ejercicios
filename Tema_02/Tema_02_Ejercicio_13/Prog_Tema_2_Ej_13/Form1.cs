@@ -16,5 +16,18 @@ namespace Prog_Tema_2_Ej_13
 			{
 			InitializeComponent();
 			}
+
+		private void btnCalcular_Click(object sender, EventArgs e)
+			{
+			lblResultado.Text = "Resultado:\n";
+			try
+				{
+				double horas = 0;
+				}
+			catch (FormatException) 
+				{
+				MessageBox.Show("Introduzca números");
+				}
+			}
 		}
 	}
