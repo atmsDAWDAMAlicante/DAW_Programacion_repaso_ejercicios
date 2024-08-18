@@ -1,0 +1,2 @@
+# Ejercicio nº 13 del Tema 2 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Un trabajador a lo largo del mes trabaja un número de horas normales y un número de horas extras. Las horas extras se pagan el doble que las horas normales. Realizar un programa en el que se introduzcan el número de horas trabajadas (normales y extras) y la paga por hora normal, y se calcule la nómina mensual, aplicando una retención del 18%.
