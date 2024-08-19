@@ -1,0 +1,2 @@
+# Ejercicio nº 20 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa que pida los datos de 2 matrices de 3x4 y las sume elemento a elemento, utilizando programación modular.

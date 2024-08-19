@@ -1,0 +1,2 @@
+# Ejercicio nº 12 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa que permita introducir las temperaturas de las 24 horas de un día en Alicante en un vector y realizar un subprograma que permita obtener la temperatura máxima, mínima y la media en base a las temperaturas introducidas.

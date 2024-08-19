@@ -1,0 +1,2 @@
+# Ejercicio nº 6 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa, utilizando programación modular, que lea dos vectores de 10 elementos, de tipo entero, y, posteriormente, compruebe si son o no son iguales. Dos vectores serán iguales si TODOS sus elementos (posición a posición) son iguales.

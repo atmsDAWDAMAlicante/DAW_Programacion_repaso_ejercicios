@@ -1,0 +1,3 @@
+# Ejercicio nº 4 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Escribir un programa con un botón que lea un vector de números positivos y negativos.
+En otro botón recorrerá el vector sustituyendo los números positivos por 0 y mostrará cuantos números negativos había. Hacerlo modularizando, es decir, la lectura, recorrido e impresión del vector serán subprogramas.

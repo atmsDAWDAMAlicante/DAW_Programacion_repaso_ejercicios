@@ -1,0 +1,2 @@
+# Ejercicio nº 16 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa, utilizando programación modular, que lea los 10 elementos de un vector de enteros de forma que no se permitan valores repetidos.

@@ -1,0 +1,2 @@
+# Ejercicio nº 17 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Escribir un programa con un botón para leer una serie de números enteros, otro para buscar la primera posición en la que se encuentra un valor (o decir que no existe), otro botón para ordenarlos en orden decreciente (de mayor a menor) y otro para visualizar la lista ordenada.

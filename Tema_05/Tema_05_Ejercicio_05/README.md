@@ -1,0 +1,2 @@
+# Ejercicio nº 5 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa, utilizando programación modular, que lea dos vectores de números. A continuación, sumaremos, posición a posición, en otro vector los dos anteriores, y por último, lo imprimiremos por pantalla.

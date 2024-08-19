@@ -1,0 +1,2 @@
+# Ejercicio nº 13 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa, utilizando programación modular, que lea por teclado un vector de números enteros de 10 componentes. El programa leerá posteriormente un número entero e indicará si dicho número se encuentra en el vector.

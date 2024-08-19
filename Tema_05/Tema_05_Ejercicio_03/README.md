@@ -1,0 +1,2 @@
+# Ejercicio nº 3 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa, utilizando programación modular, que lea los elementos de un vector de 10 enteros y, posteriormente, visualice el menor de ellos del siguiente modo: una función que lea el vector, otra que lo muestre y otra que devuelva el menor número del vector.

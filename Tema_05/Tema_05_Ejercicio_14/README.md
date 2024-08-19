@@ -1,0 +1,2 @@
+# Ejercicio nº 14 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa, utilizando programación modular, que permita introducir las temperaturas de las 24 horas de un día en Alicante y a continuación visualice las temperaturas mayores o iguales a la media.

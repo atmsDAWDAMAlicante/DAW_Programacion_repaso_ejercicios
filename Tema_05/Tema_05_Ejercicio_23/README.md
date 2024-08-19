@@ -1,0 +1,2 @@
+# Ejercicio nº 23 del Tema 5 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa que lea una matriz 5x5 y calcule la suma de los elementos que hay en la diagonal principal.
