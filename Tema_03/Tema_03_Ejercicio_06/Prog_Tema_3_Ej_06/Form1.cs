@@ -19,10 +19,16 @@ namespace Prog_Tema_3_Ej_06
 
         private void btnAccion_Click(object sender, EventArgs e)
         {
-            bool notaesnum = double.TryParse(txtNota.Text, out double nota);
-            if (notaesnum)
+			// Con este método se evalúa si lo introducido es un número y lo convierte en un entero; si no lo es y devuelve un mensaje
+			// No se utiliza try-catch
+			bool notaesnum = double.TryParse(txtNota.Text, out double nota);
+
+			// Bloque condicional if que evalúa si ha tenido éxito la conversión a entero de lo introducido en los TextBox
+			if (notaesnum)
             {
-                if (nota >= 0 && nota < 3)
+
+				// Bloque condicional if para evaluar la nota introducida y devolver la calificación que le corresponde
+				if (nota >= 0 && nota < 3)
                 {
                     lblResultado.Text = "Muy deficiente";
                 }
@@ -48,7 +54,7 @@ namespace Prog_Tema_3_Ej_06
                 }
                 else
                 {
-                    lblResultado.Text = "Introduce un\nnúmero entre\n0 y 10";
+                    lblResultado.Text = "Introduce un número\nentre 0 y 10";
                 }
 
 
