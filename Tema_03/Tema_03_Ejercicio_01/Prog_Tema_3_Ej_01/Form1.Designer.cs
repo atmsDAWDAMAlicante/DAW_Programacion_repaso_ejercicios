@@ -38,7 +38,7 @@
 			// txtDato
 			// 
 			this.txtDato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtDato.Location = new System.Drawing.Point(143, 126);
+			this.txtDato.Location = new System.Drawing.Point(157, 126);
 			this.txtDato.Name = "txtDato";
 			this.txtDato.Size = new System.Drawing.Size(87, 35);
 			this.txtDato.TabIndex = 0;
@@ -74,7 +74,7 @@
 			this.lblTitulo.ForeColor = System.Drawing.Color.White;
 			this.lblTitulo.Location = new System.Drawing.Point(61, 18);
 			this.lblTitulo.Name = "lblTitulo";
-			this.lblTitulo.Size = new System.Drawing.Size(304, 66);
+			this.lblTitulo.Size = new System.Drawing.Size(253, 55);
 			this.lblTitulo.TabIndex = 3;
 			this.lblTitulo.Text = "¿Es el \'2\'?";
 			// 
