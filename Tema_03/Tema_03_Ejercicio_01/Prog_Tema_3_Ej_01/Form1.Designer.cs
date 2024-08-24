@@ -41,7 +41,7 @@
 			this.txtDato.Location = new System.Drawing.Point(157, 126);
 			this.txtDato.Name = "txtDato";
 			this.txtDato.Size = new System.Drawing.Size(87, 35);
-			this.txtDato.TabIndex = 0;
+			this.txtDato.TabIndex = 1;
 			// 
 			// btnAccion
 			// 
@@ -51,7 +51,7 @@
 			this.btnAccion.Location = new System.Drawing.Point(97, 178);
 			this.btnAccion.Name = "btnAccion";
 			this.btnAccion.Size = new System.Drawing.Size(186, 62);
-			this.btnAccion.TabIndex = 1;
+			this.btnAccion.TabIndex = 2;
 			this.btnAccion.Text = "Acción";
 			this.btnAccion.UseVisualStyleBackColor = false;
 			this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
@@ -64,7 +64,7 @@
 			this.lblResultado.Location = new System.Drawing.Point(100, 255);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(99, 25);
-			this.lblResultado.TabIndex = 2;
+			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "Resultado";
 			// 
 			// lblTitulo
@@ -75,7 +75,7 @@
 			this.lblTitulo.Location = new System.Drawing.Point(61, 18);
 			this.lblTitulo.Name = "lblTitulo";
 			this.lblTitulo.Size = new System.Drawing.Size(253, 55);
-			this.lblTitulo.TabIndex = 3;
+			this.lblTitulo.TabIndex = 0;
 			this.lblTitulo.Text = "¿Es el \'2\'?";
 			// 
 			// lblSubtitulo
@@ -86,7 +86,7 @@
 			this.lblSubtitulo.Location = new System.Drawing.Point(92, 84);
 			this.lblSubtitulo.Name = "lblSubtitulo";
 			this.lblSubtitulo.Size = new System.Drawing.Size(191, 25);
-			this.lblSubtitulo.TabIndex = 4;
+			this.lblSubtitulo.TabIndex = 0;
 			this.lblSubtitulo.Text = "Introduce un número";
 			// 
 			// Prog_Tema_3_Ej_01

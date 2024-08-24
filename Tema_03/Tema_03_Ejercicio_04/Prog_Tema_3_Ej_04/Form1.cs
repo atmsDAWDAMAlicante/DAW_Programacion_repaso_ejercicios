@@ -29,7 +29,7 @@ namespace Prog_Tema_3_Ej_04
 			// Bloque condicional if que evalúa si ha tenido éxito la conversión a entero de lo introducido en los TextBox
 			if (num1esnum && num2esnum)
             {
-				// Bloque condicional if para evaluar si los números son iguales
+				// Bloque condicional if para evaluar qué número es el mayor (o si son iguales)
 				// Los resultados se imprimen utilizando plantillas (templates) literales
 				if (numero1 < numero2)
                 {

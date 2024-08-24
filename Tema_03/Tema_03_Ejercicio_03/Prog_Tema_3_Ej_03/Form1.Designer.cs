@@ -81,7 +81,7 @@
 			this.lblTitulo.Location = new System.Drawing.Point(12, 20);
 			this.lblTitulo.Name = "lblTitulo";
 			this.lblTitulo.Size = new System.Drawing.Size(306, 39);
-			this.lblTitulo.TabIndex = 4;
+			this.lblTitulo.TabIndex = 0;
 			this.lblTitulo.Text = "El número mayor es...";
 			// 
 			// lblNum1
@@ -90,7 +90,7 @@
 			this.lblNum1.Location = new System.Drawing.Point(12, 91);
 			this.lblNum1.Name = "lblNum1";
 			this.lblNum1.Size = new System.Drawing.Size(161, 20);
-			this.lblNum1.TabIndex = 5;
+			this.lblNum1.TabIndex = 0;
 			this.lblNum1.Text = "Introduce un número:";
 			// 
 			// lblNum2
@@ -99,7 +99,7 @@
 			this.lblNum2.Location = new System.Drawing.Point(12, 144);
 			this.lblNum2.Name = "lblNum2";
 			this.lblNum2.Size = new System.Drawing.Size(171, 20);
-			this.lblNum2.TabIndex = 6;
+			this.lblNum2.TabIndex = 0;
 			this.lblNum2.Text = "Introduce otro número:";
 			// 
 			// Prog_Tema_3_Ej_03

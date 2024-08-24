@@ -42,14 +42,14 @@
 			this.txtNumero1.Location = new System.Drawing.Point(234, 95);
 			this.txtNumero1.Name = "txtNumero1";
 			this.txtNumero1.Size = new System.Drawing.Size(100, 26);
-			this.txtNumero1.TabIndex = 0;
+			this.txtNumero1.TabIndex = 1;
 			// 
 			// txtNumero2
 			// 
 			this.txtNumero2.Location = new System.Drawing.Point(234, 140);
 			this.txtNumero2.Name = "txtNumero2";
 			this.txtNumero2.Size = new System.Drawing.Size(100, 26);
-			this.txtNumero2.TabIndex = 1;
+			this.txtNumero2.TabIndex = 2;
 			// 
 			// btnAccion
 			// 
@@ -58,7 +58,7 @@
 			this.btnAccion.Location = new System.Drawing.Point(145, 189);
 			this.btnAccion.Name = "btnAccion";
 			this.btnAccion.Size = new System.Drawing.Size(144, 44);
-			this.btnAccion.TabIndex = 2;
+			this.btnAccion.TabIndex = 3;
 			this.btnAccion.Text = "Acción";
 			this.btnAccion.UseVisualStyleBackColor = false;
 			this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
@@ -71,7 +71,7 @@
 			this.lblResultado.Location = new System.Drawing.Point(58, 250);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(108, 25);
-			this.lblResultado.TabIndex = 3;
+			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "Resultado";
 			// 
 			// lblTitulo
@@ -82,7 +82,7 @@
 			this.lblTitulo.Location = new System.Drawing.Point(53, 9);
 			this.lblTitulo.Name = "lblTitulo";
 			this.lblTitulo.Size = new System.Drawing.Size(310, 52);
-			this.lblTitulo.TabIndex = 4;
+			this.lblTitulo.TabIndex = 0;
 			this.lblTitulo.Text = "¿Son iguales?";
 			// 
 			// lblNum1
@@ -92,7 +92,7 @@
 			this.lblNum1.Location = new System.Drawing.Point(58, 98);
 			this.lblNum1.Name = "lblNum1";
 			this.lblNum1.Size = new System.Drawing.Size(161, 20);
-			this.lblNum1.TabIndex = 5;
+			this.lblNum1.TabIndex = 0;
 			this.lblNum1.Text = "Introduce un número:";
 			// 
 			// lblNum2
@@ -102,7 +102,7 @@
 			this.lblNum2.Location = new System.Drawing.Point(58, 143);
 			this.lblNum2.Name = "lblNum2";
 			this.lblNum2.Size = new System.Drawing.Size(171, 20);
-			this.lblNum2.TabIndex = 6;
+			this.lblNum2.TabIndex = 0;
 			this.lblNum2.Text = "Introduce otro número:";
 			// 
 			// Prog_Tema_3_Ej_02
