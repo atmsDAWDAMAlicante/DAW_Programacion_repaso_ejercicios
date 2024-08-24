@@ -19,6 +19,7 @@ namespace Prog_Tema_3_Ej_01
 
         private void btnAccion_Click(object sender, EventArgs e)
         {
+            // 
             bool datoesnum = int.TryParse(txtDato.Text, out int dato);
 
             if (datoesnum )

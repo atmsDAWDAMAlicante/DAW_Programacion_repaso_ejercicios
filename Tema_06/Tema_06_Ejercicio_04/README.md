@@ -1,0 +1,3 @@
+# Ejercicio nº 4 del Tema 6 de la asignatura Programación del ciclo DAW, Curso 2022-2023
+**Enunciado**: Realizar un programa en el que se lean dos listas de 10 números: una lista contendrá la bases y la otra lista contendrá los exponentes.
+Un subprograma devolverá una lista con el resultado de la potencia calculada con cada uno de los elementos correspondientes a las dos listas anteriores para cada posición.
