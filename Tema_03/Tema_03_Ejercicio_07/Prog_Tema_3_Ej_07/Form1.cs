@@ -19,49 +19,54 @@ namespace Prog_Tema_3_Ej_07
 
         private void btnAccion_Click(object sender, EventArgs e)
         {
-            bool numesnum = int.TryParse(txtNumero.Text, out int numero);
-            if (numesnum)
+			// Con este método int.TryParse se evalúa si lo introducido es un número y lo convierte en un entero; si no lo es y devuelve un mensaje
+			// No se utiliza try-catch
+			bool numesnum = int.TryParse(txtNumero.Text, out int numero);
+
+			// Bloque condicional if que evalúa si ha tenido éxito la conversión a entero de lo introducido en los TextBox
+			if (numesnum)
             {
+                // Dentro se evalúa el número introducido mediante un switch case
                 switch (numero)
                 {
                     case 0:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     case 1:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     case 2:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     case 3:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     case 4:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     case 5:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     case 6:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     case 7:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     case 8:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     case 9:
-                        lblResultado.Text = $"Se ha apretado {numero}";
+                        lblResultado.Text = $"Se ha apretado el {numero}";
                         break;
 
                     default:
@@ -69,6 +74,10 @@ namespace Prog_Tema_3_Ej_07
                         break;
 
                 }
+
+                // Finaliazada la evaluación se deja vacío el TextBox y se le devuelve el foco con el método Focus()
+                txtNumero.Text = "";
+                txtNumero.Focus();
             } 
             else
             {
