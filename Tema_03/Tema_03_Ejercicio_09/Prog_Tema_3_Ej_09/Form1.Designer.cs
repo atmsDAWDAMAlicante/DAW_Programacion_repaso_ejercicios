@@ -76,7 +76,7 @@
 			this.grpSuCambio.ForeColor = System.Drawing.Color.Bisque;
 			this.grpSuCambio.Location = new System.Drawing.Point(12, 98);
 			this.grpSuCambio.Name = "grpSuCambio";
-			this.grpSuCambio.Size = new System.Drawing.Size(379, 332);
+			this.grpSuCambio.Size = new System.Drawing.Size(379, 374);
 			this.grpSuCambio.TabIndex = 0;
 			this.grpSuCambio.TabStop = false;
 			this.grpSuCambio.Text = "Su cambio:";
@@ -96,7 +96,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Firebrick;
-			this.ClientSize = new System.Drawing.Size(422, 450);
+			this.ClientSize = new System.Drawing.Size(422, 484);
 			this.Controls.Add(this.grpSuCambio);
 			this.Controls.Add(this.btnSuCambio);
 			this.Controls.Add(this.txtCantidad);

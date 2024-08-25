@@ -19,209 +19,199 @@ namespace Prog_Tema_3_Ej_09
 
         private void btnSuCambio_Click(object sender, EventArgs e)
         {
+            // Declaración e inicialización de las variables que se utilizarán
             int unidades = 0;
+
+            // Esta variable cambiará su valor a "moneda/s" durante la ejecución del programa
             string tipoMoneda = "billete/s";
+
             lblResultado.Text = "";
-            bool numesnum = int.TryParse(txtCantidad.Text, out int cantidad);
+
+
+			// Con este método se evalúa si lo introducido es un número y lo convierte en un entero; y si no lo es devuelve un mensaje
+			// No se utiliza try-catch
+			bool numesnum = int.TryParse(txtCantidad.Text, out int cantidad);
+
+
             if (numesnum)
             {
+                // Si la cantidad introducida es un número mayor que 0 se comienza a evaluar cuántos billetes o monedas de cada tipo corresponden
                 if (cantidad > 0)
                 {
-                    // Billetes de 10.000 pesetas
-                    while (cantidad >= 10000)
-                    {
-                         unidades++;
-                         cantidad -= 10000;
-                    }
 
+					// Billetes de 10.000 pesetas
+
+                    // Las unidades de cada billete o moneda se obtienen de dividir la cantidad introducida en el TextBox por el valor del billete o moneda
+					unidades = cantidad / 10000;
+
+                    // Si hay alguna unidad entonces se concatena el resultado al mensaje a imprimir en el label
                     if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 10.000 ptas\n";
                     }
 
-                    unidades = 0;
+                    // Al final se actualiza la cantidad, con una cantidad resultante de disminuir los billetes o monedas ya computados
+                    cantidad -= (unidades * 10000);
 
-                    // Billetes de 5.000 pesetas
-                    while (cantidad >= 5000)
-                    {
-                        unidades++;
-                        cantidad -= 5000;
-                    }
+                    // Se sigue del mismo modo para todos los valores admitidos
 
-                    if (unidades > 0)
+
+
+					// Billetes de 5.000 pesetas
+
+					unidades = cantidad / 5000;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 5.000 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 5000);
 
-                    // Billetes de 2.000 pesetas
-                    while (cantidad >= 2000)
-                    {
-                        unidades++;
-                        cantidad -= 2000;
-                    }
 
-                    if (unidades > 0)
+
+					// Billetes de 2.000 pesetas
+
+					unidades = cantidad / 2000;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 2.000 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 2000);
 
-                    // Billetes de 1.000 pesetas
-                    while (cantidad >= 1000)
-                    {
-                        unidades++;
-                        cantidad -= 1000;
-                    }
 
-                    if (unidades > 0)
+
+					// Billetes de 1.000 pesetas
+
+					unidades = cantidad / 1000;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 1.000 ptas\n";
                     }
 
-                    unidades = 0;
-                    tipoMoneda = "moneda/s";
+					cantidad -= (unidades * 1000);
 
-                    // Monedas de 500 pesetas
-                    while (cantidad >= 500)
-                    {
-                        unidades++;
-                        cantidad -= 500;
-                    }
 
-                    if (unidades > 0)
+
+                    // A partir de aquí la variable string, que identifica al tipo de moneda, cambia de "billete/s" a "moneda/s"
+					tipoMoneda = "moneda/s";
+
+
+
+					// Monedas de 500 pesetas
+
+					unidades = cantidad / 500;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 500 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 500);
 
-                    // Monedas de 200 pesetas
-                    while (cantidad >= 200)
-                    {
-                        unidades++;
-                        cantidad -= 200;
-                    }
 
-                    if (unidades > 0)
+
+					// Monedas de 200 pesetas
+
+					unidades = cantidad / 200;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 200 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 200);
 
-                    // Monedas de 100 pesetas
-                    while (cantidad >= 100)
-                    {
-                        unidades++;
-                        cantidad -= 100;
-                    }
 
-                    if (unidades > 0)
+
+					// Monedas de 100 pesetas
+
+					unidades = cantidad / 100;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 100 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 100);
 
-                    // Monedas de 50 pesetas
-                    while (cantidad >= 50)
-                    {
-                        unidades++;
-                        cantidad -= 50;
-                    }
 
-                    if (unidades > 0)
+
+					// Monedas de 50 pesetas
+
+					unidades = cantidad / 50;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 50 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 50);
 
-                    // Monedas de 25 pesetas
-                    while (cantidad >= 25)
-                    {
-                        unidades++;
-                        cantidad -= 25;
-                    }
+					// Monedas de 25 pesetas
 
-                    if (unidades > 0)
+					unidades = cantidad / 25;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 25 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 25);
 
-                    // Monedas de 10 pesetas
-                    while (cantidad >= 10)
-                    {
-                        unidades++;
-                        cantidad -= 10;
-                    }
+					// Monedas de 10 pesetas
 
-                    if (unidades > 0)
+					unidades = cantidad / 10;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 10 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 10);
 
-                    // Monedas de 5 pesetas
-                    while (cantidad >= 5)
-                    {
-                        unidades++;
-                        cantidad -= 5;
-                    }
+					// Monedas de 5 pesetas
 
-                    if (unidades > 0)
+					unidades = cantidad / 5;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 5 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 5);
 
-                    // Monedas de 2 pesetas
-                    while (cantidad >= 2)
-                    {
-                        unidades++;
-                        cantidad -= 2;
-                    }
+					// Monedas de 2 pesetas
 
-                    if (unidades > 0)
+					unidades = cantidad / 2;
+
+					if (unidades > 0)
                     {
                         lblResultado.Text += $"{unidades} {tipoMoneda} de 2 ptas\n";
                     }
 
-                    unidades = 0;
+					cantidad -= (unidades * 2);
 
-                    // Monedas de 1 pesetas
-                    while (cantidad >= 1)
-                    {
-                        unidades++;
-                        cantidad -= 1;
-                    }
+                    // Monedas de 1 peseta
+
+                    unidades = cantidad; 
 
                     if (unidades > 0)
                     {
-                        lblResultado.Text += $"{unidades} {tipoMoneda} de 1 ptas\n";
+                        lblResultado.Text += $"{unidades} {tipoMoneda} de 1 pta\n";
                     }
-
-
-
                 }
+
+
                 else
                 {
                     lblResultado.Text = "Introduzca una cantidad positiva";
                 }
 
-
-
-
             }
-
-
             else
             {
                 lblResultado.Text = "Introduzca números";
