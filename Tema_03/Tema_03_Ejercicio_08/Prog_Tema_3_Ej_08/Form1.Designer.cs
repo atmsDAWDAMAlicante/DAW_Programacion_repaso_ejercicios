@@ -34,6 +34,7 @@
 			this.lblResultado = new System.Windows.Forms.Label();
 			this.lblTitulo = new System.Windows.Forms.Label();
 			this.lblSubtitulo = new System.Windows.Forms.Label();
+			this.btnBorrar = new System.Windows.Forms.Button();
 			this.grpTexto.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -46,7 +47,7 @@
 			// 
 			// btnAccion
 			// 
-			this.btnAccion.BackColor = System.Drawing.Color.MediumAquamarine;
+			this.btnAccion.BackColor = System.Drawing.Color.DarkGreen;
 			this.btnAccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnAccion.ForeColor = System.Drawing.Color.Gold;
 			this.btnAccion.Location = new System.Drawing.Point(26, 126);
@@ -63,16 +64,17 @@
 			this.grpTexto.ForeColor = System.Drawing.Color.Gold;
 			this.grpTexto.Location = new System.Drawing.Point(26, 182);
 			this.grpTexto.Name = "grpTexto";
-			this.grpTexto.Size = new System.Drawing.Size(278, 337);
+			this.grpTexto.Size = new System.Drawing.Size(314, 337);
 			this.grpTexto.TabIndex = 0;
 			this.grpTexto.TabStop = false;
 			// 
 			// lblResultado
 			// 
 			this.lblResultado.AutoSize = true;
-			this.lblResultado.Location = new System.Drawing.Point(16, 22);
+			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblResultado.Location = new System.Drawing.Point(6, 22);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(120, 24);
+			this.lblResultado.Size = new System.Drawing.Size(126, 25);
 			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "(su mensaje)";
 			// 
@@ -98,12 +100,26 @@
 			this.lblSubtitulo.TabIndex = 0;
 			this.lblSubtitulo.Text = "Introduzca su texto:";
 			// 
+			// btnBorrar
+			// 
+			this.btnBorrar.BackColor = System.Drawing.Color.DarkGreen;
+			this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBorrar.ForeColor = System.Drawing.Color.Gold;
+			this.btnBorrar.Location = new System.Drawing.Point(174, 126);
+			this.btnBorrar.Name = "btnBorrar";
+			this.btnBorrar.Size = new System.Drawing.Size(130, 50);
+			this.btnBorrar.TabIndex = 3;
+			this.btnBorrar.Text = "Borrar";
+			this.btnBorrar.UseVisualStyleBackColor = false;
+			this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+			// 
 			// Prog_Tema_3_Ej_08
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DarkCyan;
-			this.ClientSize = new System.Drawing.Size(344, 538);
+			this.ClientSize = new System.Drawing.Size(410, 538);
+			this.Controls.Add(this.btnBorrar);
 			this.Controls.Add(this.lblSubtitulo);
 			this.Controls.Add(this.lblTitulo);
 			this.Controls.Add(this.grpTexto);
@@ -126,6 +142,7 @@
         private System.Windows.Forms.Label lblResultado;
 		private System.Windows.Forms.Label lblTitulo;
 		private System.Windows.Forms.Label lblSubtitulo;
+		private System.Windows.Forms.Button btnBorrar;
 		}
 }
 
