@@ -16,5 +16,20 @@ namespace Prog_Tema_3_Ej_13
 			{
 			InitializeComponent();
 			}
+
+		private void btnBucleFor_Click(object sender, EventArgs e)
+			{
+			lblResultado.Text = "Bucle For";
+			}
+
+		private void btnBucleWhile_Click(object sender, EventArgs e)
+			{
+			lblResultado.Text = "Bucle While";
+			}
+
+		private void btnDoWhile_Click(object sender, EventArgs e)
+			{
+			lblResultado.Text = "Bucle Do While";
+			}
 		}
 	}
