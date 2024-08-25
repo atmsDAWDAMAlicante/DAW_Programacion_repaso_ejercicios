@@ -57,7 +57,7 @@
 			this.lblTitulo.ForeColor = System.Drawing.Color.Yellow;
 			this.lblTitulo.Location = new System.Drawing.Point(12, 9);
 			this.lblTitulo.Name = "lblTitulo";
-			this.lblTitulo.Size = new System.Drawing.Size(370, 49);
+			this.lblTitulo.Size = new System.Drawing.Size(445, 59);
 			this.lblTitulo.TabIndex = 0;
 			this.lblTitulo.Text = "Su cambio (en €uros)";
 			// 
@@ -88,7 +88,7 @@
 			this.grpResultado.ForeColor = System.Drawing.Color.Yellow;
 			this.grpResultado.Location = new System.Drawing.Point(12, 130);
 			this.grpResultado.Name = "grpResultado";
-			this.grpResultado.Size = new System.Drawing.Size(346, 390);
+			this.grpResultado.Size = new System.Drawing.Size(346, 433);
 			this.grpResultado.TabIndex = 0;
 			this.grpResultado.TabStop = false;
 			this.grpResultado.Text = "Su cambio:";
@@ -109,7 +109,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Navy;
-			this.ClientSize = new System.Drawing.Size(390, 540);
+			this.ClientSize = new System.Drawing.Size(390, 575);
 			this.Controls.Add(this.lblSubtitulo);
 			this.Controls.Add(this.grpResultado);
 			this.Controls.Add(this.txtEuros);
