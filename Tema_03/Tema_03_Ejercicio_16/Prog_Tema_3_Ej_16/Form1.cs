@@ -16,5 +16,6 @@ namespace Prog_Tema_3_Ej_16
 			{
 			InitializeComponent();
 			}
+
 		}
 	}
