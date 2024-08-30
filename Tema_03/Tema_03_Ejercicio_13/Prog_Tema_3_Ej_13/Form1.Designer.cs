@@ -35,6 +35,7 @@
 			this.btnBucleWhile = new System.Windows.Forms.Button();
 			this.btnDoWhile = new System.Windows.Forms.Button();
 			this.lblResultado = new System.Windows.Forms.Label();
+			this.lblTipoBucle = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// lblTitulo
@@ -51,7 +52,7 @@
 			// 
 			this.lblSubtitulo.AutoSize = true;
 			this.lblSubtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblSubtitulo.Location = new System.Drawing.Point(460, 26);
+			this.lblSubtitulo.Location = new System.Drawing.Point(467, 26);
 			this.lblSubtitulo.Name = "lblSubtitulo";
 			this.lblSubtitulo.Size = new System.Drawing.Size(239, 25);
 			this.lblSubtitulo.TabIndex = 0;
@@ -61,7 +62,7 @@
 			// 
 			this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtNumero.ForeColor = System.Drawing.Color.ForestGreen;
-			this.txtNumero.Location = new System.Drawing.Point(720, 20);
+			this.txtNumero.Location = new System.Drawing.Point(726, 20);
 			this.txtNumero.Name = "txtNumero";
 			this.txtNumero.Size = new System.Drawing.Size(60, 30);
 			this.txtNumero.TabIndex = 1;
@@ -111,9 +112,18 @@
 			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.Location = new System.Drawing.Point(12, 121);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(192, 25);
+			this.lblResultado.Size = new System.Drawing.Size(236, 30);
 			this.lblResultado.TabIndex = 0;
-			this.lblResultado.Text = "Preparados... listos...";
+			this.lblResultado.Text = "Preparados... listos... ";
+			// 
+			// lblTipoBucle
+			// 
+			this.lblTipoBucle.AutoSize = true;
+			this.lblTipoBucle.Location = new System.Drawing.Point(636, 74);
+			this.lblTipoBucle.Name = "lblTipoBucle";
+			this.lblTipoBucle.Size = new System.Drawing.Size(126, 24);
+			this.lblTipoBucle.TabIndex = 0;
+			this.lblTipoBucle.Text = "Tipo de Bucle";
 			// 
 			// Prog_Tema_3_Ej_13
 			// 
@@ -121,6 +131,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Chartreuse;
 			this.ClientSize = new System.Drawing.Size(800, 160);
+			this.Controls.Add(this.lblTipoBucle);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnDoWhile);
 			this.Controls.Add(this.btnBucleWhile);
@@ -144,6 +155,7 @@
 		private System.Windows.Forms.Button btnBucleWhile;
 		private System.Windows.Forms.Button btnDoWhile;
 		private System.Windows.Forms.Label lblResultado;
+		private System.Windows.Forms.Label lblTipoBucle;
 		}
 	}
 
