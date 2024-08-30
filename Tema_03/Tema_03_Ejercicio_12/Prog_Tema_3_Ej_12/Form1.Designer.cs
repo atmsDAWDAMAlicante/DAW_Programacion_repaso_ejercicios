@@ -35,6 +35,7 @@
 			this.btnBucleWhile = new System.Windows.Forms.Button();
 			this.btnBucleDoWhile = new System.Windows.Forms.Button();
 			this.lblResultado = new System.Windows.Forms.Label();
+			this.lblTipoBucle = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// lblTitulo
@@ -114,9 +115,19 @@
 			this.lblResultado.ForeColor = System.Drawing.Color.White;
 			this.lblResultado.Location = new System.Drawing.Point(12, 140);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(190, 25);
+			this.lblResultado.Size = new System.Drawing.Size(195, 25);
 			this.lblResultado.TabIndex = 0;
-			this.lblResultado.Text = "preparados... listos...";
+			this.lblResultado.Text = "preparados... listos... ";
+			// 
+			// lblTipoBucle
+			// 
+			this.lblTipoBucle.AutoSize = true;
+			this.lblTipoBucle.ForeColor = System.Drawing.Color.White;
+			this.lblTipoBucle.Location = new System.Drawing.Point(724, 87);
+			this.lblTipoBucle.Name = "lblTipoBucle";
+			this.lblTipoBucle.Size = new System.Drawing.Size(105, 20);
+			this.lblTipoBucle.TabIndex = 0;
+			this.lblTipoBucle.Text = "Tipo de Bucle";
 			// 
 			// Prog_Tema_3_Ej_12
 			// 
@@ -124,6 +135,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DodgerBlue;
 			this.ClientSize = new System.Drawing.Size(873, 191);
+			this.Controls.Add(this.lblTipoBucle);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnBucleDoWhile);
 			this.Controls.Add(this.btnBucleWhile);
@@ -147,6 +159,7 @@
 		private System.Windows.Forms.Button btnBucleWhile;
 		private System.Windows.Forms.Button btnBucleDoWhile;
 		private System.Windows.Forms.Label lblResultado;
+		private System.Windows.Forms.Label lblTipoBucle;
 		}
 	}
 
