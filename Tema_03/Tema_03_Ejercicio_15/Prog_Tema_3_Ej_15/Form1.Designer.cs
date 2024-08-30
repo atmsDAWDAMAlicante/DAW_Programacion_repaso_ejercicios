@@ -86,13 +86,14 @@
 			this.btnAccion.TabIndex = 1;
 			this.btnAccion.Text = "Abre el InputBox";
 			this.btnAccion.UseVisualStyleBackColor = false;
+			this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
 			// 
 			// lblAviso
 			// 
 			this.lblAviso.AutoSize = true;
 			this.lblAviso.Location = new System.Drawing.Point(36, 292);
 			this.lblAviso.Name = "lblAviso";
-			this.lblAviso.Size = new System.Drawing.Size(51, 20);
+			this.lblAviso.Size = new System.Drawing.Size(403, 20);
 			this.lblAviso.TabIndex = 0;
 			this.lblAviso.Text = "Introduce un número negativo para finalizar el programa";
 			// 
