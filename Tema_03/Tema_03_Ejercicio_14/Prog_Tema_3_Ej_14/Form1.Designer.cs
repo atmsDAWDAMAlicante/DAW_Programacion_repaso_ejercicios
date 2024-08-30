@@ -63,6 +63,7 @@
 			this.btnBucleWhile.TabIndex = 3;
 			this.btnBucleWhile.Text = "Bucle While";
 			this.btnBucleWhile.UseVisualStyleBackColor = false;
+			this.btnBucleWhile.Click += new System.EventHandler(this.btnBucleWhile_Click);
 			// 
 			// btnBucleFor
 			// 
@@ -73,12 +74,13 @@
 			this.btnBucleFor.TabIndex = 2;
 			this.btnBucleFor.Text = "Bucle For";
 			this.btnBucleFor.UseVisualStyleBackColor = false;
+			this.btnBucleFor.Click += new System.EventHandler(this.btnBucleFor_Click);
 			// 
 			// lblResultado
 			// 
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblResultado.Location = new System.Drawing.Point(143, 193);
+			this.lblResultado.Location = new System.Drawing.Point(63, 193);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(251, 67);
 			this.lblResultado.TabIndex = 0;
