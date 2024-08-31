@@ -53,7 +53,7 @@
 			this.lblSubtitulo.ForeColor = System.Drawing.Color.Black;
 			this.lblSubtitulo.Location = new System.Drawing.Point(12, 76);
 			this.lblSubtitulo.Name = "lblSubtitulo";
-			this.lblSubtitulo.Size = new System.Drawing.Size(591, 64);
+			this.lblSubtitulo.Size = new System.Drawing.Size(585, 64);
 			this.lblSubtitulo.TabIndex = 0;
 			this.lblSubtitulo.Text = "Introduce el número (max. 15) de repeticiones\nde las series del 1 al 10:";
 			// 
@@ -61,9 +61,9 @@
 			// 
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Arial", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblResultado.Location = new System.Drawing.Point(12, 229);
+			this.lblResultado.Location = new System.Drawing.Point(292, 173);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(120, 26);
+			this.lblResultado.Size = new System.Drawing.Size(97, 21);
 			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "Resultado";
 			// 
@@ -78,6 +78,7 @@
 			this.btnMostrar.TabIndex = 2;
 			this.btnMostrar.Text = "Mostrar";
 			this.btnMostrar.UseVisualStyleBackColor = false;
+			this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
 			// 
 			// txtNumero
 			// 
@@ -93,7 +94,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.PaleGreen;
-			this.ClientSize = new System.Drawing.Size(631, 523);
+			this.ClientSize = new System.Drawing.Size(631, 548);
 			this.Controls.Add(this.txtNumero);
 			this.Controls.Add(this.btnMostrar);
 			this.Controls.Add(this.lblResultado);
