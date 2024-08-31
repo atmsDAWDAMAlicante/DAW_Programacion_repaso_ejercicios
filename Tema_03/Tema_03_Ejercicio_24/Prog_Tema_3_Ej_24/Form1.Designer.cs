@@ -73,6 +73,7 @@
 			this.btnMostrar.TabIndex = 2;
 			this.btnMostrar.Text = "Mostrar";
 			this.btnMostrar.UseVisualStyleBackColor = false;
+			this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
 			// 
 			// lblResultado
 			// 
@@ -80,7 +81,7 @@
 			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.Location = new System.Drawing.Point(70, 234);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(82, 20);
+			this.lblResultado.Size = new System.Drawing.Size(131, 29);
 			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "Resultado";
 			// 
