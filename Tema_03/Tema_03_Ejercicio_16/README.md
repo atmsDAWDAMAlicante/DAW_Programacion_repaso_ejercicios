@@ -1,2 +1,4 @@
 # Ejercicio nº 16 del Tema 3 de la asignatura Programación del ciclo DAW, Curso 2022-2023
 **Enunciado**: Realizar un programa en el que se vayan introduciendo números y se sumen siempre y cuando estos números estén entre 0 y 9, en otro caso terminará la introducción de números mostrando la suma de todos los números introducidos.
+
+*Se ha introducido una modificación respecto del enunciado original (que pedía realizar el ejercicio mediante InputBox y un bucle Do...While) para realizarlo declarando una variable global 'sumaTotal' que se incrementa con cada número introducido dentro del rango permitido.*
