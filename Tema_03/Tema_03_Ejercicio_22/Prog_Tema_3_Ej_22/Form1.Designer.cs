@@ -33,6 +33,7 @@
 			this.lblResultado = new System.Windows.Forms.Label();
 			this.txtNumero = new System.Windows.Forms.TextBox();
 			this.btnComprobar = new System.Windows.Forms.Button();
+			this.lblUnaPista = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// lblTitulo
@@ -51,7 +52,7 @@
 			this.lblSubtitulo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblSubtitulo.Location = new System.Drawing.Point(22, 81);
 			this.lblSubtitulo.Name = "lblSubtitulo";
-			this.lblSubtitulo.Size = new System.Drawing.Size(489, 26);
+			this.lblSubtitulo.Size = new System.Drawing.Size(508, 26);
 			this.lblSubtitulo.TabIndex = 0;
 			this.lblSubtitulo.Text = "Introduce el número de serie para comprobarlo:";
 			// 
@@ -83,6 +84,16 @@
 			this.btnComprobar.TabIndex = 2;
 			this.btnComprobar.Text = "Comprobar";
 			this.btnComprobar.UseVisualStyleBackColor = false;
+			this.btnComprobar.Click += new System.EventHandler(this.btnComprobar_Click);
+			// 
+			// lblUnaPista
+			// 
+			this.lblUnaPista.AutoSize = true;
+			this.lblUnaPista.Location = new System.Drawing.Point(12, 262);
+			this.lblUnaPista.Name = "lblUnaPista";
+			this.lblUnaPista.Size = new System.Drawing.Size(598, 23);
+			this.lblUnaPista.TabIndex = 0;
+			this.lblUnaPista.Text = "Los defectuosos son: (14681 a 15681), (70001 a 79999) y (88888 y 111111)";
 			// 
 			// Prog_Tema_3_Ej_22
 			// 
@@ -90,6 +101,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Bisque;
 			this.ClientSize = new System.Drawing.Size(400, 290);
+			this.Controls.Add(this.lblUnaPista);
 			this.Controls.Add(this.btnComprobar);
 			this.Controls.Add(this.txtNumero);
 			this.Controls.Add(this.lblResultado);
@@ -110,6 +122,7 @@
 		private System.Windows.Forms.Label lblResultado;
 		private System.Windows.Forms.TextBox txtNumero;
 		private System.Windows.Forms.Button btnComprobar;
+		private System.Windows.Forms.Label lblUnaPista;
 		}
 	}
 
