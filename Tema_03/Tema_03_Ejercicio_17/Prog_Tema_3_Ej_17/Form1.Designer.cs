@@ -66,13 +66,14 @@
 			this.btnAccion.TabIndex = 1;
 			this.btnAccion.Text = "Acción";
 			this.btnAccion.UseVisualStyleBackColor = false;
+			this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
 			// 
 			// lblResultado
 			// 
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.ForeColor = System.Drawing.Color.White;
-			this.lblResultado.Location = new System.Drawing.Point(128, 222);
+			this.lblResultado.Location = new System.Drawing.Point(12, 213);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(128, 28);
 			this.lblResultado.TabIndex = 0;
@@ -83,7 +84,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Tomato;
-			this.ClientSize = new System.Drawing.Size(410, 352);
+			this.ClientSize = new System.Drawing.Size(413, 404);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnAccion);
 			this.Controls.Add(this.lblSubtitulo);
