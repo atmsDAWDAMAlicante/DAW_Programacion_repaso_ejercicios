@@ -76,6 +76,7 @@
 			this.btnAccion.TabIndex = 1;
 			this.btnAccion.Text = "Acción";
 			this.btnAccion.UseVisualStyleBackColor = false;
+			this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
 			// 
 			// Prog_Tema_3_Ej_18
 			// 
