@@ -110,6 +110,7 @@
 			this.btnCalcular.TabIndex = 3;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = false;
+			this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
 			// 
 			// Prog_Tema_3_Ej_20
 			// 
