@@ -58,7 +58,7 @@
 			this.lblSubtitulo.Name = "lblSubtitulo";
 			this.lblSubtitulo.Size = new System.Drawing.Size(217, 29);
 			this.lblSubtitulo.TabIndex = 0;
-			this.lblSubtitulo.Text = "Tienes tres intentos: ";
+			this.lblSubtitulo.Text = "Tienes 3 intentos: ";
 			// 
 			// txtUsuario
 			// 
@@ -82,10 +82,11 @@
 			this.btnAcceder.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnAcceder.Location = new System.Drawing.Point(317, 114);
 			this.btnAcceder.Name = "btnAcceder";
-			this.btnAcceder.Size = new System.Drawing.Size(141, 58);
+			this.btnAcceder.Size = new System.Drawing.Size(145, 58);
 			this.btnAcceder.TabIndex = 3;
 			this.btnAcceder.Text = "Acceder";
 			this.btnAcceder.UseVisualStyleBackColor = false;
+			this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
 			// 
 			// lblUsuario
 			// 
@@ -115,7 +116,7 @@
 			this.lblResultado.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.Location = new System.Drawing.Point(30, 209);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(185, 23);
+			this.lblResultado.Size = new System.Drawing.Size(154, 19);
 			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "Resultado: root / 1234";
 			// 
