@@ -76,12 +76,13 @@
 			this.btnMostrar.TabIndex = 2;
 			this.btnMostrar.Text = "Mostrar";
 			this.btnMostrar.UseVisualStyleBackColor = false;
+			this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
 			// 
 			// lblResultado
 			// 
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblResultado.Location = new System.Drawing.Point(32, 35);
+			this.lblResultado.Location = new System.Drawing.Point(6, 35);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(137, 28);
 			this.lblResultado.TabIndex = 0;
@@ -93,7 +94,7 @@
 			this.grpPizarra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.grpPizarra.Location = new System.Drawing.Point(24, 182);
 			this.grpPizarra.Name = "grpPizarra";
-			this.grpPizarra.Size = new System.Drawing.Size(495, 276);
+			this.grpPizarra.Size = new System.Drawing.Size(495, 126);
 			this.grpPizarra.TabIndex = 0;
 			this.grpPizarra.TabStop = false;
 			this.grpPizarra.Text = "Pizarra";
@@ -103,7 +104,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Yellow;
-			this.ClientSize = new System.Drawing.Size(574, 478);
+			this.ClientSize = new System.Drawing.Size(574, 332);
 			this.Controls.Add(this.grpPizarra);
 			this.Controls.Add(this.btnMostrar);
 			this.Controls.Add(this.txtNumero);
