@@ -41,11 +41,11 @@
 			this.lblTitulo.AutoSize = true;
 			this.lblTitulo.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblTitulo.ForeColor = System.Drawing.Color.White;
-			this.lblTitulo.Location = new System.Drawing.Point(77, 15);
+			this.lblTitulo.Location = new System.Drawing.Point(116, 12);
 			this.lblTitulo.Name = "lblTitulo";
-			this.lblTitulo.Size = new System.Drawing.Size(354, 46);
+			this.lblTitulo.Size = new System.Drawing.Size(297, 46);
 			this.lblTitulo.TabIndex = 0;
-			this.lblTitulo.Text = "Σ Serie: 3,6,9... 99";
+			this.lblTitulo.Text = "Múltiplos de 3:";
 			// 
 			// lblSubtitulo
 			// 
@@ -69,12 +69,13 @@
 			this.btnMostrar.TabIndex = 1;
 			this.btnMostrar.Text = "Mostrar";
 			this.btnMostrar.UseVisualStyleBackColor = false;
+			this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
 			// 
 			// lblResultado
 			// 
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblResultado.Location = new System.Drawing.Point(28, 39);
+			this.lblResultado.Location = new System.Drawing.Point(28, 46);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(128, 28);
 			this.lblResultado.TabIndex = 0;
@@ -87,7 +88,7 @@
 			this.grpPizarra.ForeColor = System.Drawing.Color.White;
 			this.grpPizarra.Location = new System.Drawing.Point(12, 154);
 			this.grpPizarra.Name = "grpPizarra";
-			this.grpPizarra.Size = new System.Drawing.Size(460, 426);
+			this.grpPizarra.Size = new System.Drawing.Size(460, 212);
 			this.grpPizarra.TabIndex = 0;
 			this.grpPizarra.TabStop = false;
 			this.grpPizarra.Text = "Pizarra";
@@ -97,7 +98,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DarkViolet;
-			this.ClientSize = new System.Drawing.Size(484, 604);
+			this.ClientSize = new System.Drawing.Size(484, 380);
 			this.Controls.Add(this.grpPizarra);
 			this.Controls.Add(this.btnMostrar);
 			this.Controls.Add(this.lblSubtitulo);
