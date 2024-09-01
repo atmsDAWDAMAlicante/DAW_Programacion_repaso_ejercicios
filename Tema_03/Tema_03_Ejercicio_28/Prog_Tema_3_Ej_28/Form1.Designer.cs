@@ -75,6 +75,7 @@
 			this.btnMostrar.TabIndex = 3;
 			this.btnMostrar.Text = "Mostrar";
 			this.btnMostrar.UseVisualStyleBackColor = false;
+			this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
 			// 
 			// lblResultado
 			// 
@@ -99,7 +100,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Plum;
-			this.ClientSize = new System.Drawing.Size(484, 426);
+			this.ClientSize = new System.Drawing.Size(484, 264);
 			this.Controls.Add(this.txtNumero2);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnMostrar);
