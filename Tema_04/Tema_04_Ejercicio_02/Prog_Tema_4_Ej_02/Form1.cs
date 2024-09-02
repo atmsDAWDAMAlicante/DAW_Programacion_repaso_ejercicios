@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Prog_Tema_4_Ej_02
+namespace Prog_Tema_4_Ej_02_ // Hay que cambiar el nombre del namespace para usar las pruebas unitarias
 {
     public partial class Prog_Tema_4_Ej_02 : Form
     {
@@ -19,37 +19,44 @@ namespace Prog_Tema_4_Ej_02
 
         private void btnAccion_Click(object sender, EventArgs e)
         {
-            Comprobar();
+			bool numEsNum1 = int.TryParse(txtNumero1.Text, out int numero1);
+			bool numEsNum2 = int.TryParse(txtNumero2.Text, out int numero2);
+			
+            if (numEsNum1 && numEsNum2)
+                {
+                // Una variable booleana recogerá el resultado de la función que evalúa si el primer número es divisible por el segundo
+                bool esDivisible = ComprobarSiEsDivisible(numero1, numero2);
+
+                // En la plantilla literal, que imprime el mensaje en el lable, se incluye la llamada a una función, a la que se 
+                // le pasa por parámetro el resultado contenido en la variable booleana 'esDivisible'.
+                // Esta función 'ValorNegacion()' devuelve un string que muestra por pantalla la palabra 'NO' o una cadena vacía, 
+                // según sea el valor de la variable 'esDivisible'
+                lblResultado.Text = $"El numero {numero1} {ValorNegacion(esDivisible)} es divisible\npor {numero2}";
+                }
+
+            else
+                {
+				lblResultado.Text = "Introduce números";
+				}
         }
 
-        public void Comprobar()
-        {
-            bool numero1num = double.TryParse(txtNumero1.Text, out double numero1);
-            bool numero2num = double.TryParse(txtNumero2.Text, out double numero2);
-
-            if (numero1num && numero2num)
+		// Función ComprobarSiEsDivisible devuelve true o false si 'numero1' es divisible por 'numero2'
+        // En esta función se evalúa dicha circunstancia
+		public bool ComprobarSiEsDivisible (int num1, int num2)
             {
-                EsDivisible(numero1, numero2);
-            } else
-            {
-                lblResultado.Text = "Introduce números";
+            if (num1 % num2 == 0)
+                return true;
+            else
+                return false;
             }
-        }
 
-        public void EsDivisible(double numero1, double numero2)
-        {
-            double resto = numero1 % numero2;
-            string negacion;
-            if (resto == 0)
+		// Función ValorNegacion() devuelve un string con el valor 'NO' o una cadena vacía, según sea el valor del parámetro pasado
+		public string ValorNegacion(bool siEsDivisible)
             {
-                negacion = "";
-            } else
-            {
-                negacion = " no";
+            if (siEsDivisible)
+                return "";
+            else
+                return "NO";
             }
-
-
-            lblResultado.Text = $"{numero1}{negacion} es divisible \npor {numero2}";
-        }
     }
 }

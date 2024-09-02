@@ -1,4 +1,4 @@
-﻿namespace Prog_Tema_4_Ej_02
+﻿namespace Prog_Tema_4_Ej_02_
 {
     partial class Prog_Tema_4_Ej_02
     {
@@ -101,7 +101,7 @@
 			this.lblResultado.Text = "...";
 
 			// 
-			// Prog_Tema_4_Ej_02
+			// Prog_Tema_4_Ej_02_
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
