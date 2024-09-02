@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Prog_Tema_4_Ej_01_ 
-// para las pruebas unitarias hay que cambiar el nombre del namespace para que no coincida con el de la clase
+// Para las pruebas unitarias hay que cambiar el nombre del namespace y que no coincida con el nombre de la clase
 {
-    public partial class Prog_Tema_4_Ej_01 : Form
+    public partial class Prog_Tema_4_Ej_01 : Form // No puede coincidir con el nombre del namespace
     {
         public Prog_Tema_4_Ej_01()
         {
@@ -20,35 +20,31 @@ namespace Prog_Tema_4_Ej_01_
 
         private void btnSuma_Click(object sender, EventArgs e)
         {
-            // Adaptación para las pruebas unitarias
-            int resultadoSuma;
+            lblResultado.Text = "";
 
-            // Manejo del posible error al introducir caracteres no numéricos sin
-            // utilizar excepciones
             bool numero1Num = int.TryParse(txtNumero1.Text, out int numero1);
             bool numero2Num = int.TryParse(txtNumero2.Text, out int numero2);
 
-            if ((numero1Num == false) || (numero2Num == false))
+            if ((numero1Num == true) && (numero2Num == true))
             {
-                lblResultado.Text = "Introduce un número";
-            }
+				int resultadoSuma = Suma(numero1, numero2); // la variable se declara dentro del bloque if pero se pasa a la función por parámetro
+				MostrarResultadoSuma(resultadoSuma);
+			}
             else
             {
-                // Esta función es la que se evaluará en la prueba unitaria
-                resultadoSuma = Suma(numero1, numero2);
-                MuestraResultadoSuma(resultadoSuma);
-            }
+				lblResultado.Text = "Introduce números.";
+			}
 
         }
 
-        public int Suma(int numero1, int numero2)
-        {
+        public int Suma(int numero1, int numero2) // Esta función es la que se comprobará en la prueba unitaria
+        { 
             return numero1 + numero2;
         }
 
-        public void MuestraResultadoSuma(int resultado)
+        public void MostrarResultadoSuma(int resultado)
         {
-            lblResultado.Text = resultado.ToString();
+            lblResultado.Text = $"El resultado es: {resultado}";
         }
 
 
