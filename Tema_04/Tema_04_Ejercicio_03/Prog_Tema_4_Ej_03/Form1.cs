@@ -26,14 +26,14 @@ namespace Prog_Tema_4_Ej_03
                 Intercambio(numero1, numero2);
             } else
             {
-                lblNumeroA.Text = "Introduce números";
+                lblXigual.Text = "Introduce números";
             }
         }
 
         public void Intercambio(int numero1, int numero2)
         {
-            lblNumeroA.Text = $"{numero2}";
-            lblNumeroB.Text = $"{numero1}";
+            lblXigual.Text = $"{numero2}";
+            lblYigual.Text = $"{numero1}";
         }
     }
 }
