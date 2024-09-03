@@ -23,17 +23,28 @@ namespace Prog_Tema_4_Ej_03
             bool numero2num = int.TryParse(txtNumero2.Text, out int numero2);
             if (numero1num && numero2num)
             {
-                Intercambio(numero1, numero2);
-            } else
+                string resultado = Intercambiar(numero1, numero2);
+                lblResultado.Text = resultado;
+            } 
+            else
             {
-                lblXigual.Text = "Introduce números";
+                lblResultado.Text = "Introduce números";
             }
         }
 
-        public void Intercambio(int numero1, int numero2)
+        public string Intercambiar(int x, int y)
         {
-            lblXigual.Text = $"{numero2}";
-            lblYigual.Text = $"{numero1}";
+            string resultado;
+            int a, b;
+            a = x;
+            b = y;
+            resultado = $"Antes: x = {x}, y = {y}\n";
+            x = b; 
+            y = a;
+            resultado += $"Ahora: x = {x}, y = {y}\n";
+
+			return resultado;
+
         }
     }
 }
