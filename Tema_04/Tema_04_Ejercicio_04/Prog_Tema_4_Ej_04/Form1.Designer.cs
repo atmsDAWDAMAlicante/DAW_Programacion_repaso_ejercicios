@@ -1,4 +1,4 @@
-﻿namespace Prog_Tema_4_Ej_04
+﻿namespace Prog_Tema_4_Ej_04_
 {
     partial class Prog_Tema_4_Ej_04
     {
@@ -102,7 +102,7 @@
 			this.lblTituloResultado.TabIndex = 0;
 			this.lblTituloResultado.Text = "Y su valor absoltuo es:";
 			// 
-			// Prog_Tema_4_Ej_04
+			// Prog_Tema_4_Ej_04_
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
