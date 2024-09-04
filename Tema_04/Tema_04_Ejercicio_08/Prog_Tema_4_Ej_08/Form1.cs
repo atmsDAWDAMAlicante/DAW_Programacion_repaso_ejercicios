@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Prog_Tema_4_Ej_08
+namespace Prog_Tema_4_Ej_08_
 {
     public partial class Prog_Tema_4_Ej_08 : Form
     {
@@ -48,7 +48,7 @@ namespace Prog_Tema_4_Ej_08
             }
             else 
             {
-                lblResultado.Text = "Introduce un\nvalor entre 0\ny 10";
+				lblResultado.Text = "Introduce un valor\nentre 0 y 10";
             }
         }
 
@@ -56,7 +56,7 @@ namespace Prog_Tema_4_Ej_08
         {
             double media = (( num1 + num2 + num3 ) / 3 );
             // lblResultado.Text = "La nota media\nes " + Math.Round(media, 2).ToString("#.##");
-            lblResultado.Text = $"La nota media\nes {media:F2}";
+            lblResultado.Text = $"{media:F2}";
         }
     }
 
