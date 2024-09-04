@@ -1,4 +1,4 @@
-﻿namespace Prog_Tema_4_Ej_03
+﻿namespace Prog_Tema_4_Ej_03_
 {
     partial class Prog_Tema_4_Ej_03
     {
@@ -112,7 +112,7 @@
 			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "Resultado:";
 			// 
-			// Prog_Tema_4_Ej_03
+			// Prog_Tema_4_Ej_03_
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
