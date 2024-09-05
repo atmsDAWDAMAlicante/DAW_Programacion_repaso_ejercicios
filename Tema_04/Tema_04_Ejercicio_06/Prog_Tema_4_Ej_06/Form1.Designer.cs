@@ -32,10 +32,10 @@
 			this.txtNumero1 = new System.Windows.Forms.TextBox();
 			this.txtNumero2 = new System.Windows.Forms.TextBox();
 			this.btnAccion = new System.Windows.Forms.Button();
-			this.lblTitulo1 = new System.Windows.Forms.Label();
-			this.lblTitulo2 = new System.Windows.Forms.Label();
+			this.lblTituloDivision = new System.Windows.Forms.Label();
+			this.lblTituloResto = new System.Windows.Forms.Label();
 			this.lblResultadoDivision = new System.Windows.Forms.Label();
-			this.lblResto = new System.Windows.Forms.Label();
+			this.lblResultadoResto = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// lblTitulo
@@ -80,27 +80,27 @@
 			this.btnAccion.UseVisualStyleBackColor = false;
 			this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
 			// 
-			// lblTitulo1
+			// lblTituloDivision
 			// 
-			this.lblTitulo1.AutoSize = true;
-			this.lblTitulo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTitulo1.ForeColor = System.Drawing.Color.Navy;
-			this.lblTitulo1.Location = new System.Drawing.Point(27, 175);
-			this.lblTitulo1.Name = "lblTitulo1";
-			this.lblTitulo1.Size = new System.Drawing.Size(248, 70);
-			this.lblTitulo1.TabIndex = 0;
-			this.lblTitulo1.Text = "El resultado de la\ndivisión entera es:";
+			this.lblTituloDivision.AutoSize = true;
+			this.lblTituloDivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTituloDivision.ForeColor = System.Drawing.Color.Navy;
+			this.lblTituloDivision.Location = new System.Drawing.Point(27, 175);
+			this.lblTituloDivision.Name = "lblTituloDivision";
+			this.lblTituloDivision.Size = new System.Drawing.Size(207, 58);
+			this.lblTituloDivision.TabIndex = 0;
+			this.lblTituloDivision.Text = "El resultado de la\ndivisión entera es:";
 			// 
-			// lblTitulo2
+			// lblTituloResto
 			// 
-			this.lblTitulo2.AutoSize = true;
-			this.lblTitulo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTitulo2.ForeColor = System.Drawing.Color.Navy;
-			this.lblTitulo2.Location = new System.Drawing.Point(27, 293);
-			this.lblTitulo2.Name = "lblTitulo2";
-			this.lblTitulo2.Size = new System.Drawing.Size(160, 35);
-			this.lblTitulo2.TabIndex = 0;
-			this.lblTitulo2.Text = "El resto es:";
+			this.lblTituloResto.AutoSize = true;
+			this.lblTituloResto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTituloResto.ForeColor = System.Drawing.Color.Navy;
+			this.lblTituloResto.Location = new System.Drawing.Point(27, 293);
+			this.lblTituloResto.Name = "lblTituloResto";
+			this.lblTituloResto.Size = new System.Drawing.Size(133, 29);
+			this.lblTituloResto.TabIndex = 0;
+			this.lblTituloResto.Text = "El resto es:";
 			// 
 			// lblResultadoDivision
 			// 
@@ -113,28 +113,28 @@
 			this.lblResultadoDivision.TabIndex = 0;
 			this.lblResultadoDivision.Text = "...";
 			// 
-			// lblResto
+			// lblResultadoResto
 			// 
-			this.lblResto.AutoSize = true;
-			this.lblResto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblResto.ForeColor = System.Drawing.Color.Navy;
-			this.lblResto.Location = new System.Drawing.Point(183, 294);
-			this.lblResto.Name = "lblResto";
-			this.lblResto.Size = new System.Drawing.Size(31, 29);
-			this.lblResto.TabIndex = 0;
-			this.lblResto.Text = "...";
+			this.lblResultadoResto.AutoSize = true;
+			this.lblResultadoResto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblResultadoResto.ForeColor = System.Drawing.Color.Navy;
+			this.lblResultadoResto.Location = new System.Drawing.Point(206, 294);
+			this.lblResultadoResto.Name = "lblResultadoResto";
+			this.lblResultadoResto.Size = new System.Drawing.Size(31, 29);
+			this.lblResultadoResto.TabIndex = 0;
+			this.lblResultadoResto.Text = "...";
 			// 
-			// Prog_Tema_4_Ej_06_
+			// Prog_Tema_4_Ej_06
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DeepSkyBlue;
-			this.ClientSize = new System.Drawing.Size(506, 369);
+			this.ClientSize = new System.Drawing.Size(501, 375);
 			this.Controls.Add(this.lblTitulo);
-			this.Controls.Add(this.lblResto);
+			this.Controls.Add(this.lblResultadoResto);
 			this.Controls.Add(this.lblResultadoDivision);
-			this.Controls.Add(this.lblTitulo2);
-			this.Controls.Add(this.lblTitulo1);
+			this.Controls.Add(this.lblTituloResto);
+			this.Controls.Add(this.lblTituloDivision);
 			this.Controls.Add(this.btnAccion);
 			this.Controls.Add(this.txtNumero2);
 			this.Controls.Add(this.txtNumero1);
@@ -151,10 +151,10 @@
 		private System.Windows.Forms.TextBox txtNumero1;
         private System.Windows.Forms.TextBox txtNumero2;
         private System.Windows.Forms.Button btnAccion;
-        private System.Windows.Forms.Label lblTitulo1;
-        private System.Windows.Forms.Label lblTitulo2;
+        private System.Windows.Forms.Label lblTituloDivision;
+        private System.Windows.Forms.Label lblTituloResto;
         private System.Windows.Forms.Label lblResultadoDivision;
-        private System.Windows.Forms.Label lblResto;
+        private System.Windows.Forms.Label lblResultadoResto;
 		}
 }
 
