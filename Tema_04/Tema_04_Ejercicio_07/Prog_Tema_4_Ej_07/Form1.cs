@@ -24,43 +24,49 @@ namespace Prog_Tema_4_Ej_07_
 
             if (num1esnum && num2esnum)
             {
+                // Comprobado que los valores introducidos por los TextBox son números
+                // se envían por parámetro a la función IdentificarMenor cuyo objeto es identificar cual de los dos es el 
+                // menor y así reenviarlos a la función Calcular en el orden adecuado
                 IdentificarMenor(numero1, numero2);
             }
 
             else
             {
-                lblResultado.Text = "Introduce números";
+                lblResultado.Text = "Introduce números.";
             }
 
         }
 
         public void IdentificarMenor(int numero1, int numero2)
         {
-
+            int MCD;
+            // Esta función identifica cuál de dos los números es el menor y los envía a la función Calcular 
+            // en el siguiente orden Calcular(número mayor, número menor)
             if (numero1 > numero2)
+            {   
+                MCD = Calcular(numero1, numero2);
+			} 
+            else
             {
-                Calcular(numero1, numero2);
-            } else
-            {
-                Calcular(numero2, numero1);
-            }
+				MCD = Calcular(numero2, numero1);
+			}
+			lblResultado.Text = $"{MCD}";
+		}
 
-
-
-        }
-
-        public void Calcular(int numMayor, int numMenor)
+        public int Calcular(int numMayor, int numMenor)
         {
-            int MCD = 0;
-            for (int i = 1; i < numMenor; i++)
-            {
-                if ((numMayor % i == 0) && (numMenor % i == 0))
+            int MCD = 1; // Si no hay otro número mayor, el máximo común divisor será 1
+            // El bucle es decreciente, como el número a buscar ha de ser el "común", 
+            // comienza el bucle desde el número menor y decrece hasta alcanzar el valor 1
+            for (int i = numMenor; i > 0; i--)
+			{ // Si encuentra el máximo común divisor, representado por la variable de control i (que decrece), lo devuelve, incluyendo el 1
+				if ((numMayor % i == 0) && (numMenor % i == 0))
                 {
-                    MCD = i;
-                } 
+                    return i;
+                }
             }
-
-            lblResultado.Text = $"El Máximo\nComún\nDivisor de\n{numMayor} y {numMenor} es {MCD}";
+            // En cualquier otro caso devolvería 1, pero este return está más bien para que Visual Studio permita compilar
+            return MCD;
         }
 
 
