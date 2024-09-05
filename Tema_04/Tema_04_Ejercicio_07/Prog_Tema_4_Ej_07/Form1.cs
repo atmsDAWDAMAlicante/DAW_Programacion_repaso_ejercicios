@@ -24,20 +24,25 @@ namespace Prog_Tema_4_Ej_07_
 
             if (num1esnum && num2esnum)
             {
-                // Comprobado que los valores introducidos por los TextBox son números
-                // se envían por parámetro a la función IdentificarMenor cuyo objeto es identificar cual de los dos es el 
-                // menor y así reenviarlos a la función Calcular en el orden adecuado
-                IdentificarMenor(numero1, numero2);
-            }
+				// Comprobado que los valores introducidos por los TextBox son números
+				// se envían por parámetro a la función IdentificarMenor cuyo objeto es identificar cual de los dos es el 
+				// menor y así reenviarlos a la función Calcular en el orden adecuado
 
-            else
+                // Se espera un entero que será el máximo común divisor que se imprimirá por pantalla
+                // El método IdentificarMenor es el que se evalúa en la prueba unitaria
+
+				int MCD = IdentificarMenor(Math.Abs(numero1), Math.Abs(numero2));  // Se envían los valores absolutos para controlar los supuestos de números negativos
+				lblResultado.Text = $"{MCD}";
+			}
+
+			else
             {
                 lblResultado.Text = "Introduce números.";
             }
 
         }
 
-        public void IdentificarMenor(int numero1, int numero2)
+        public int IdentificarMenor(int numero1, int numero2)
         {
             int MCD;
             // Esta función identifica cuál de dos los números es el menor y los envía a la función Calcular 
@@ -50,7 +55,8 @@ namespace Prog_Tema_4_Ej_07_
             {
 				MCD = Calcular(numero2, numero1);
 			}
-			lblResultado.Text = $"{MCD}";
+            //lblResultado.Text = $"{MCD}";
+            return MCD;
 		}
 
         public int Calcular(int numMayor, int numMenor)
@@ -65,7 +71,7 @@ namespace Prog_Tema_4_Ej_07_
                     return i;
                 }
             }
-            // En cualquier otro caso devolvería 1, pero este return está más bien para que Visual Studio permita compilar
+            // En cualquier otro caso devolvería 1, por ejemplo si se introduce un 0 en alguno de los TextBox
             return MCD;
         }
 
