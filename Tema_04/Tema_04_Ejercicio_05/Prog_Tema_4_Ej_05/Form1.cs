@@ -19,33 +19,40 @@ namespace Prog_Tema_4_Ej_05_
 
         private void btnAccion_Click(object sender, EventArgs e)
         {
-            bool numero1num = int.TryParse(txtNumero1.Text, out int numero1);
-            bool numero2num = int.TryParse(txtNumero2.Text, out int numero2);
-            if (numero1num && numero2num)
-            {
-                Operacion(numero1, numero2);
-            }
-            else
-            {
-                lblResultado.Text = "Introduce números";
-            }
+            lblResultado.Text = "";
+            string resultado = Comparar(txtNumero1.Text, txtNumero2.Text);
+            lblResultado.Text = resultado;
         }
 
-        public void Operacion(int numero1, int numero2)
+        public string Comparar(string numero1, string numero2)
         {
-            if (numero1 > numero2)
-            {
-                lblResultado.Text = $"{numero1}";
-            } else if (numero1 < numero2)
-            {
-                lblResultado.Text = $"{numero2}";
-            } else if (numero1 == numero2)
-            {
-                lblResultado.Text = "Son iguales";
-            } else
-            {
-                lblResultado.Text = "Algo va mal";
-            }
+
+			bool numero1EsNum = int.TryParse(numero1, out int num1);
+			bool numero2EsNum = int.TryParse(numero2, out int num2);
+
+            // Los dos bloques if anidados evalúan:
+            // que lo introducido sean números
+            // cuál es el mayor, o si son iguales
+            // y devuelve un string acorde en cada caso
+			if (numero1EsNum && numero2EsNum)
+				{
+				if (num1 > num2)
+                    {
+                    return num1.ToString();
+                    }
+                else if (num1 < num2)
+                    {
+                    return $"{num2}";
+                    }
+                else
+                    {
+                    return "¡Dos iguales para hoy!";
+                    }
+				}
+			else
+				{
+				return "Introduce números.";
+				}
         }
     }
 }
