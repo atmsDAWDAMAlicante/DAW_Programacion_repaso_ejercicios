@@ -20,15 +20,17 @@ namespace Prog_Tema_4_Ej_08_
         private void btnAccion_Click(object sender, EventArgs e)
         {
             // El label imprimirá por pantalla el resultado de la función ValidarCampos() que, devuelve un string
-            lblResultado.Text = ValidarCampos();
+            // La función ValidarCampos() pasa por parámetro tres strings que contienen lo introducido en los TextBox
+            string num1 = txtNum1.Text, num2 = txtNum2.Text, num3 = txtNum3.Text;
+            lblResultado.Text = ValidarCampos(num1, num2, num3);
 		}
 
 
-        public string ValidarCampos()
+        public string ValidarCampos(string numero1, string numero2, string numero3)
         {
-            bool num1esnum = double.TryParse(txtNum1.Text, out double num1);
-            bool num2esnum = double.TryParse(txtNum2.Text, out double num2);
-            bool num3esnum = double.TryParse(txtNum3.Text, out double num3);
+            bool num1esnum = double.TryParse(numero1, out double num1);
+            bool num2esnum = double.TryParse(numero2, out double num2);
+            bool num3esnum = double.TryParse(numero3, out double num3);
 
             if (num1esnum && num2esnum && num3esnum)
             {
