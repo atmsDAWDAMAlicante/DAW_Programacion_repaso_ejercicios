@@ -1,4 +1,4 @@
-﻿namespace Prog_Tema_4_Ej_09
+﻿namespace Prog_Tema_4_Ej_09_
 	{
 	partial class Prog_Tema_4_Ej_09
 		{
@@ -123,7 +123,7 @@
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = false;
 			// 
-			// Prog_Tema_4_Ej_09
+			// Prog_Tema_4_Ej_09_
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
