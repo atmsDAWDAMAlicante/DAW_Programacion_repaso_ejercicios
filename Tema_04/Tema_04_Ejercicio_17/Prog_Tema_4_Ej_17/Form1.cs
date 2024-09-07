@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Prog_Tema_4_Ej_17
+namespace Prog_Tema_4_Ej_17_
 	{
 	public partial class Prog_Tema_4_Ej_17 : Form
 		{
