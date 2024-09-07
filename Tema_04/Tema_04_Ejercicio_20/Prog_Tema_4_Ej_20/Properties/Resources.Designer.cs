@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Prog_Tema_4_Ej_20.Properties
+namespace Prog_Tema_4_Ej_20_.Properties
 	{
 
 
