@@ -58,7 +58,7 @@
 			this.btnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnDividir.Location = new System.Drawing.Point(112, 162);
 			this.btnDividir.Name = "btnDividir";
-			this.btnDividir.Size = new System.Drawing.Size(116, 43);
+			this.btnDividir.Size = new System.Drawing.Size(143, 43);
 			this.btnDividir.TabIndex = 3;
 			this.btnDividir.Text = "Dividir";
 			this.btnDividir.UseVisualStyleBackColor = false;
@@ -67,7 +67,8 @@
 			// 
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblResultado.Location = new System.Drawing.Point(193, 223);
+			this.lblResultado.ForeColor = System.Drawing.Color.GhostWhite;
+			this.lblResultado.Location = new System.Drawing.Point(195, 216);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(122, 29);
 			this.lblResultado.TabIndex = 0;
@@ -105,10 +106,10 @@
 			// 
 			this.lblTituloResultado.AutoSize = true;
 			this.lblTituloResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTituloResultado.Location = new System.Drawing.Point(52, 225);
+			this.lblTituloResultado.Location = new System.Drawing.Point(43, 218);
 			this.lblTituloResultado.Name = "lblTituloResultado";
 			this.lblTituloResultado.Size = new System.Drawing.Size(146, 25);
-			this.lblTituloResultado.TabIndex = 4;
+			this.lblTituloResultado.TabIndex = 0;
 			this.lblTituloResultado.Text = "El resultado es:";
 			// 
 			// Prog_Tema_4_Ej_17
@@ -116,7 +117,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Indigo;
-			this.ClientSize = new System.Drawing.Size(375, 272);
+			this.ClientSize = new System.Drawing.Size(375, 268);
 			this.Controls.Add(this.lblTituloResultado);
 			this.Controls.Add(this.lblNum2);
 			this.Controls.Add(this.lblNum1);
