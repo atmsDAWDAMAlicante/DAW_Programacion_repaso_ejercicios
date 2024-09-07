@@ -46,7 +46,7 @@
 			this.lblTitulo.Name = "lblTitulo";
 			this.lblTitulo.Size = new System.Drawing.Size(445, 59);
 			this.lblTitulo.TabIndex = 0;
-			this.lblTitulo.Text = "Su cambio (en €uros)";
+			this.lblTitulo.Text = "ƒ Su cambio (en €uros)";
 			// 
 			// lblSubtitulo
 			// 

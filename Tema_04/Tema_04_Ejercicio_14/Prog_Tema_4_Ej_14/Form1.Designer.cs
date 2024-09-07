@@ -46,7 +46,7 @@
 			this.lblTitulo.Name = "lblTitulo";
 			this.lblTitulo.Size = new System.Drawing.Size(379, 29);
 			this.lblTitulo.TabIndex = 0;
-			this.lblTitulo.Text = "Introduce una cantidad en pesetas";
+			this.lblTitulo.Text = "ƒ Introduce una cantidad en pesetas";
 			// 
 			// txtCantidad
 			// 
