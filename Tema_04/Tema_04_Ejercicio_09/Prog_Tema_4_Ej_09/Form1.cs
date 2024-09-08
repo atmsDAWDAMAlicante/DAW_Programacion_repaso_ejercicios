@@ -16,5 +16,10 @@ namespace Prog_Tema_4_Ej_09_
 			{
 			InitializeComponent();
 			}
+
+		private void btnCalcular_Click(object sender, EventArgs e)
+			{
+
+			}
 		}
 	}

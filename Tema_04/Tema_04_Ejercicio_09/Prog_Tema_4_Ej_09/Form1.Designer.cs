@@ -122,8 +122,9 @@
 			this.btnCalcular.TabIndex = 3;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = false;
+			this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
 			// 
-			// Prog_Tema_4_Ej_09_
+			// Prog_Tema_4_Ej_09
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
