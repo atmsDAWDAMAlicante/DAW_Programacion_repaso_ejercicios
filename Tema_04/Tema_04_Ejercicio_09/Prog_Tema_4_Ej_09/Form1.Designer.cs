@@ -54,7 +54,7 @@
 			this.lblTituloBase.AutoSize = true;
 			this.lblTituloBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblTituloBase.ForeColor = System.Drawing.Color.White;
-			this.lblTituloBase.Location = new System.Drawing.Point(105, 90);
+			this.lblTituloBase.Location = new System.Drawing.Point(91, 90);
 			this.lblTituloBase.Name = "lblTituloBase";
 			this.lblTituloBase.Size = new System.Drawing.Size(68, 25);
 			this.lblTituloBase.TabIndex = 0;
@@ -65,7 +65,7 @@
 			this.lblTituloExponente.AutoSize = true;
 			this.lblTituloExponente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblTituloExponente.ForeColor = System.Drawing.Color.White;
-			this.lblTituloExponente.Location = new System.Drawing.Point(105, 128);
+			this.lblTituloExponente.Location = new System.Drawing.Point(91, 128);
 			this.lblTituloExponente.Name = "lblTituloExponente";
 			this.lblTituloExponente.Size = new System.Drawing.Size(122, 25);
 			this.lblTituloExponente.TabIndex = 0;
@@ -76,7 +76,7 @@
 			this.lblSubtituloResultado.AutoSize = true;
 			this.lblSubtituloResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblSubtituloResultado.ForeColor = System.Drawing.Color.White;
-			this.lblSubtituloResultado.Location = new System.Drawing.Point(121, 252);
+			this.lblSubtituloResultado.Location = new System.Drawing.Point(98, 243);
 			this.lblSubtituloResultado.Name = "lblSubtituloResultado";
 			this.lblSubtituloResultado.Size = new System.Drawing.Size(162, 25);
 			this.lblSubtituloResultado.TabIndex = 0;
@@ -87,7 +87,7 @@
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.ForeColor = System.Drawing.Color.White;
-			this.lblResultado.Location = new System.Drawing.Point(147, 302);
+			this.lblResultado.Location = new System.Drawing.Point(71, 286);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(108, 25);
 			this.lblResultado.TabIndex = 0;
@@ -129,7 +129,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DarkOrange;
-			this.ClientSize = new System.Drawing.Size(388, 366);
+			this.ClientSize = new System.Drawing.Size(417, 343);
 			this.Controls.Add(this.btnCalcular);
 			this.Controls.Add(this.txtExponente);
 			this.Controls.Add(this.txtBase);
