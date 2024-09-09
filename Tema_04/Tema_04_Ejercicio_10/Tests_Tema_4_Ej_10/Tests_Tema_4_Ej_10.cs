@@ -9,8 +9,18 @@ namespace Tests_Tema_4_Ej_10
 	public class Tests_Tema_4_Ej_10
 		{
 		[TestMethod]
-		public void TestMethod1()
+		[DataRow("1", true)]
+		[DataRow("a", false)]
+		public void TestMethodResultadoValidacion(string dato, bool expected)
 			{
+			// Act
+			Prog_Tema_4_Ej_10 objetoPrograma = new Prog_Tema_4_Ej_10();
+			bool actual = objetoPrograma.ValidarBase(dato);
+
+			// Assert
+			Assert.AreEqual(expected, actual);
 			}
+
+
 		}
 	}

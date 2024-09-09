@@ -71,7 +71,7 @@
 			this.lblTituloBase.ForeColor = System.Drawing.Color.Black;
 			this.lblTituloBase.Location = new System.Drawing.Point(132, 142);
 			this.lblTituloBase.Name = "lblTituloBase";
-			this.lblTituloBase.Size = new System.Drawing.Size(76, 30);
+			this.lblTituloBase.Size = new System.Drawing.Size(63, 25);
 			this.lblTituloBase.TabIndex = 0;
 			this.lblTituloBase.Text = "Base:";
 			// 
@@ -106,6 +106,7 @@
 			this.btnCalcular.TabIndex = 2;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = false;
+			this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
 			// 
 			// lblTituloResultado2
 			// 
@@ -172,7 +173,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.LemonChiffon;
-			this.ClientSize = new System.Drawing.Size(438, 450);
+			this.ClientSize = new System.Drawing.Size(550, 450);
 			this.Controls.Add(this.lblResultado7);
 			this.Controls.Add(this.lblResultado5);
 			this.Controls.Add(this.lblTituloResultado7);
