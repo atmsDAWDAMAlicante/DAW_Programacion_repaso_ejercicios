@@ -25,7 +25,7 @@ namespace Prog_Tema_4_Ej_11_
 
 			if (numEsNum)
 				{
-				lblResultado.Text = EsBisiesto(yearIntroducido); // la función devuelve un string para evaluarlo en la prueba unitaria
+				ImpresionResultado(EsBisiesto(yearIntroducido), yearIntroducido);
 				}
 			else
 				{
@@ -33,7 +33,11 @@ namespace Prog_Tema_4_Ej_11_
 				}
 			}
 
-		public string EsBisiesto(int yearIntroducido)
+		// Este método EsBisiesto() es el que se evalúa en la prueba unitaria
+		// y se puede utilizar en ejercicios posteriores.
+		// De este modo queda modularizado el código separando en dos funciones la comprobación de si el año es bisiesto
+		// y en otra función ImpresionResultado() la impresión del resultado en función de si el año es o no bisiesto
+		public bool EsBisiesto(int yearIntroducido) 
 			{
 			// Con arreglo a la formulación literal del enunciado:
 			// "Los Años bisiestos son los divisibles por 4 excepto los divisibles por 100 y no divisibles por 400."
@@ -43,11 +47,23 @@ namespace Prog_Tema_4_Ej_11_
 			// c) "y no divisibles por 400" equivale a  yearIntroducido%400!=0
 			if ( (yearIntroducido%4==0) && !(yearIntroducido%100==0) && (yearIntroducido%400!=0) )
 				{
-				return $"{yearIntroducido} SÍ es bisiesto.";
+				return true;
 				}
 			else
 				{
-				return $"{yearIntroducido} NO es bisiesto.";
+				return false;
+				}
+			}
+
+		public void ImpresionResultado(bool resultado, int yearIntroducido)
+			{
+			if (resultado)
+				{
+				lblResultado.Text = $"{yearIntroducido} SÍ es bisiesto.";
+				}
+			else
+				{
+				lblResultado.Text = $"{yearIntroducido} NO es bisiesto.";
 				}
 			}
 		}
