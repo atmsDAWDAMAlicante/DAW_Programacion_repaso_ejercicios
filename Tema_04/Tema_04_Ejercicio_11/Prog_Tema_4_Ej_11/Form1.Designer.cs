@@ -62,7 +62,7 @@
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.ForeColor = System.Drawing.Color.White;
-			this.lblResultado.Location = new System.Drawing.Point(229, 153);
+			this.lblResultado.Location = new System.Drawing.Point(195, 153);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(108, 25);
 			this.lblResultado.TabIndex = 0;
@@ -82,19 +82,20 @@
 			this.btnCalcular.BackColor = System.Drawing.Color.DarkViolet;
 			this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnCalcular.ForeColor = System.Drawing.Color.White;
-			this.btnCalcular.Location = new System.Drawing.Point(73, 146);
+			this.btnCalcular.Location = new System.Drawing.Point(39, 146);
 			this.btnCalcular.Name = "btnCalcular";
 			this.btnCalcular.Size = new System.Drawing.Size(128, 42);
 			this.btnCalcular.TabIndex = 2;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = false;
+			this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
 			// 
 			// Prog_Tema_4_Ej_11
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DarkMagenta;
-			this.ClientSize = new System.Drawing.Size(421, 228);
+			this.ClientSize = new System.Drawing.Size(460, 228);
 			this.Controls.Add(this.btnCalcular);
 			this.Controls.Add(this.txtYear);
 			this.Controls.Add(this.lblResultado);

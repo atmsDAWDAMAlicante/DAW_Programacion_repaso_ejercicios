@@ -16,5 +16,32 @@ namespace Prog_Tema_4_Ej_11_
 			{
 			InitializeComponent();
 			}
+
+		private void btnCalcular_Click(object sender, EventArgs e)
+			{
+			lblResultado.Text = "";
+
+			bool numEsNum = int.TryParse(txtYear.Text, out int yearIntroducido);
+
+			if (numEsNum)
+				{
+				lblResultado.Text = EsBisiesto(yearIntroducido);
+				}
+			else
+				{
+				lblResultado.Text = "Introduce números.";
+				}
+
+			}
+
+		public string EsBisiesto(int yearIntroducido)
+			{
+
+
+			return $"{yearIntroducido}";
+			}
+
+
+
 		}
 	}
