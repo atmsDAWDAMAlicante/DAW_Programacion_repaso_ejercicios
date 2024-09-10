@@ -45,7 +45,8 @@ namespace Prog_Tema_4_Ej_13_
 						int nuevoDia = SumarDia(diaNum, mesNum, bisiesto);
 						int nuevoMes = SumarMes(nuevoDia, mesNum);
 						int nuevoYear = SumarYear(nuevoMes, yearNum);
-
+						// Finalmente se imprime el resultado
+						lblResultado.Text = $"{FormatearFecha(nuevoDia)}/{FormatearFecha(nuevoMes)}/{nuevoYear}";
 						}
 					else
 						{
@@ -180,7 +181,14 @@ namespace Prog_Tema_4_Ej_13_
 
 		public string FormatearFecha(int numero)
 			{
-			return "";
+			if (numero.ToString().Length == 1)
+				{
+				return $"0{numero.ToString()}";
+				}
+			else
+				{
+				return $"{numero.ToString()}";
+				}
 			}
 
 		}

@@ -7,19 +7,6 @@ using System.Security.Cryptography;
 namespace Tests_Tema_4_Ej_13
 	{
 
-	/*
-	[TestClass]
-	public class Tests_Tema_4_Ej_13
-		{
-		[TestMethod]
-		public void TestMethod1()
-			{
-			}
-		}
-
-	*/
-
-
 	[TestClass]
 	public class Tests_Tema_4_Ej_13_Incrementar
 		{
@@ -100,8 +87,6 @@ namespace Tests_Tema_4_Ej_13
 			// Assert
 			Assert.AreEqual(expected, actual);
 			}
-
-
 		}
 
 
@@ -204,8 +189,29 @@ namespace Tests_Tema_4_Ej_13
 				Assert.IsFalse(actual);
 				}
 			}
-	}
 
+
+
+	[TestClass]
+	public class Tests_Tema_4_Ej_13_Formato
+		{
+		[TestMethod]
+		[DataRow(1, "01")]
+		[DataRow(2, "02")]
+		[DataRow(11, "11")]
+		[DataRow(12, "12")]
+		public void TestMethodFormatoNumeros(int numero, string expected)
+			{
+			// Act
+			Prog_Tema_4_Ej_13 objetoPrograma = new Prog_Tema_4_Ej_13();
+			string actual = objetoPrograma.FormatearFecha(numero);
+
+			// Assert
+			Assert.AreEqual(expected, actual);
+			}
+		}
+
+	}
 
 
 
