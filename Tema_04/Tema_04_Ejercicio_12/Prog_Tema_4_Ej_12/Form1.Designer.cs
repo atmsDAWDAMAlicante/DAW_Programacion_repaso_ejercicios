@@ -121,13 +121,14 @@
 			this.btnCalcular.TabIndex = 4;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = false;
+			this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
 			// 
 			// lblResultado
 			// 
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.ForeColor = System.Drawing.Color.White;
-			this.lblResultado.Location = new System.Drawing.Point(161, 325);
+			this.lblResultado.Location = new System.Drawing.Point(157, 325);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(119, 26);
 			this.lblResultado.TabIndex = 0;
