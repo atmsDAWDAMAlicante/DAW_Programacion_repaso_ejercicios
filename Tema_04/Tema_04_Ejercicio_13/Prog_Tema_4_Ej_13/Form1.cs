@@ -43,7 +43,8 @@ namespace Prog_Tema_4_Ej_13_
 						{
 						// sumar un día
 						int nuevoDia = SumarDia(diaNum, mesNum, bisiesto);
-						int nuevoMes = SumarMes(diaNum, mesNum, bisiesto);
+						int nuevoMes = SumarMes(nuevoDia, mesNum);
+						MessageBox.Show($"{nuevoDia}/{nuevoMes}");
 						int nuevoYear = SumarYear(diaNum, mesNum, yearNum);
 						}
 					else
@@ -140,10 +141,22 @@ namespace Prog_Tema_4_Ej_13_
 				}
 			}
 
-		// 2.2 - Método SumarMes: 
-		public int SumarMes(int dia, int mes, bool bisiesto)
+		// 2.2 - Método SumarMes:  comprueba si es el último día de cada mes, en cuyo caso incrementa el mes
+		//public int SumarMes(int dia, int mes, bool bisiesto)
+		public int SumarMes(int nuevoDia, int mes)
 			{
-			return 0;
+			if ((mes == 12) && (nuevoDia == 1)) // último día del año
+				{
+				return 1;
+				}
+			else if (nuevoDia == 1) // cualquier fin de mes
+				{
+				return ++mes;
+				}
+			else // resto de los meses
+				{
+				return mes;
+				}
 			}
 
 		// 2.3 - Método SumarYear: 

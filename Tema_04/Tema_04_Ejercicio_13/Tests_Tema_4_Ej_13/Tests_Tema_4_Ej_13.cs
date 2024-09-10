@@ -44,16 +44,47 @@ namespace Tests_Tema_4_Ej_13
 			}
 
 		[TestMethod]
-		[DataRow(31, 1, false, 0)]
-		public void TestMethodSumarMeses(int dia, int mes, bool bisiesto, int expected)
+		[DataRow(1, 1, 2)] // En estas pruebas se comprueba que se incrementa el mes si el día que se 
+		[DataRow(1, 2, 3)] // pasa al método es el día 1 previamente incrementado al validar que es fin de mes
+		[DataRow(1, 3, 4)]
+		[DataRow(1, 4, 5)]
+		[DataRow(1, 5, 6)]
+		[DataRow(1, 6, 7)]
+		[DataRow(1, 7, 8)]
+		[DataRow(1, 8, 9)]
+		[DataRow(1, 9, 10)]
+		[DataRow(1, 10, 11)]
+		[DataRow(1, 11, 12)]
+		[DataRow(1, 12, 1)]
+		public void TestMethodSumarMesesPrimeroDeMes(int dia, int mes, int expected)
 			{
 			// Act
 			Prog_Tema_4_Ej_13 objetoPrueba = new Prog_Tema_4_Ej_13();
-			int actual = objetoPrueba.SumarMes(dia, mes, bisiesto);
+			int actual = objetoPrueba.SumarMes(dia, mes);
 
 			// Assert
 			Assert.AreEqual(expected, actual);
 			}
+
+		[TestMethod]
+		[DataRow(6, 1, 1)] // En estas pruebas se comprueba que no se incrementa el mes  
+		[DataRow(23, 2, 2)] // en días corrientes
+		[DataRow(14, 4, 4)]
+		[DataRow(20, 6, 6)]
+		[DataRow(7, 7, 7)]
+		[DataRow(12, 10, 10)]
+		[DataRow(2, 11, 11)]
+		[DataRow(25, 12, 12)]
+		public void TestMethodSumarMesesDiasCorrientes(int dia, int mes, int expected)
+			{
+			// Act
+			Prog_Tema_4_Ej_13 objetoPrueba = new Prog_Tema_4_Ej_13();
+			int actual = objetoPrueba.SumarMes(dia, mes);
+
+			// Assert
+			Assert.AreEqual(expected, actual);
+			}
+
 
 
 
