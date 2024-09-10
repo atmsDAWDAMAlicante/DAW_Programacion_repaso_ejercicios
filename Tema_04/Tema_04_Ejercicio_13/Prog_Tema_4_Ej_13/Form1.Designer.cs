@@ -88,7 +88,7 @@
 			this.lblResultado.AutoSize = true;
 			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.ForeColor = System.Drawing.Color.Yellow;
-			this.lblResultado.Location = new System.Drawing.Point(158, 325);
+			this.lblResultado.Location = new System.Drawing.Point(104, 325);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(119, 26);
 			this.lblResultado.TabIndex = 0;
@@ -105,6 +105,7 @@
 			this.btnCalcular.TabIndex = 4;
 			this.btnCalcular.Text = "Mañana será...";
 			this.btnCalcular.UseVisualStyleBackColor = false;
+			this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
 			// 
 			// txtDia
 			// 
@@ -138,7 +139,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DarkGreen;
-			this.ClientSize = new System.Drawing.Size(463, 374);
+			this.ClientSize = new System.Drawing.Size(463, 414);
 			this.Controls.Add(this.txtYear);
 			this.Controls.Add(this.txtMes);
 			this.Controls.Add(this.txtDia);
