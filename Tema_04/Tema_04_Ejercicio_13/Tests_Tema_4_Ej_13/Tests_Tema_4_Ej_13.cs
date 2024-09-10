@@ -2,9 +2,78 @@
 using System;
 using System.Windows.Forms;
 using Prog_Tema_4_Ej_13_;
+using System.Security.Cryptography;
 
 namespace Tests_Tema_4_Ej_13
 	{
+
+	/*
+	[TestClass]
+	public class Tests_Tema_4_Ej_13
+		{
+		[TestMethod]
+		public void TestMethod1()
+			{
+			}
+		}
+
+	*/
+
+
+	[TestClass]
+	public class Tests_Tema_4_Ej_13_Incrementar
+		{
+		[TestMethod]
+		[DataRow(31, 1, false, 1)]
+		[DataRow(30, 4, false, 1)]
+		[DataRow(28, 2, false, 1)]
+		[DataRow(29, 2, true, 1)]
+		[DataRow(23, 2, false, 24)]
+		[DataRow(14, 4, false, 15)]
+		[DataRow(18, 7, false, 19)]
+		[DataRow(6, 12, true, 7)]
+		public void TestMethodSumarDias(int dia, int mes, bool bisiesto, int expected)
+			{
+			// Act
+			Prog_Tema_4_Ej_13 objetoPrueba = new Prog_Tema_4_Ej_13();
+			int actual = objetoPrueba.SumarDia(dia, mes, bisiesto);
+
+			// Assert
+			Assert.AreEqual(expected, actual);
+
+			}
+
+		[TestMethod]
+		[DataRow(31, 1, false, 0)]
+		public void TestMethodSumarMeses(int dia, int mes, bool bisiesto, int expected)
+			{
+			// Act
+			Prog_Tema_4_Ej_13 objetoPrueba = new Prog_Tema_4_Ej_13();
+			int actual = objetoPrueba.SumarMes(dia, mes, bisiesto);
+
+			// Assert
+			Assert.AreEqual(expected, actual);
+			}
+
+
+
+		[TestMethod]
+		[DataRow(31, 1, 1980, 0)]
+		public void TestMethodSumarAnos(int dia, int mes, int year, int expected)
+			{
+			// Act
+			Prog_Tema_4_Ej_13 objetoPrueba = new Prog_Tema_4_Ej_13();
+			int actual = objetoPrueba.SumarYear(dia, mes, year);
+
+			// Assert
+			Assert.AreEqual(expected, actual);
+			}
+
+
+		}
+
+
+
 
 	[TestClass]
 	public class Tests_Tema_4_Ej_13_Anos_Bisiestos
@@ -55,17 +124,7 @@ namespace Tests_Tema_4_Ej_13
 
 		}
 
-	/*
-	[TestClass]
-	public class Tests_Tema_4_Ej_13
-		{
-		[TestMethod]
-		public void TestMethod1()
-			{
-			}
-		}
 
-	*/
 
 		[TestClass]
 		public class Tests_Tema_4_Ej_13_Fechas

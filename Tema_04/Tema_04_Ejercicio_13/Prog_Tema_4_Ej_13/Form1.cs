@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -41,6 +42,9 @@ namespace Prog_Tema_4_Ej_13_
 					if(ValidarFechaIntroducida(diaNum, mesNum, bisiesto))
 						{
 						// sumar un día
+						int nuevoDia = SumarDia(diaNum, mesNum, bisiesto);
+						int nuevoMes = SumarMes(diaNum, mesNum, bisiesto);
+						int nuevoYear = SumarYear(diaNum, mesNum, yearNum);
 						}
 					else
 						{
@@ -82,6 +86,7 @@ namespace Prog_Tema_4_Ej_13_
 				}
 			}
 
+		// 1.2 - Método ValidarFechaIntroducida: 
 		public bool ValidarFechaIntroducida (int dia, int mes, bool bisiesto)
 			{
 			if (((mes == 1) || (mes == 3) || (mes == 5) || (mes == 7) || (mes == 8) || (mes == 10) || (mes == 12)) && ((dia > 0) && (dia < 32)))
@@ -105,15 +110,49 @@ namespace Prog_Tema_4_Ej_13_
 				return false; 
 				}
 			}
-			
+
 
 
 		// 2. Métodos para incrementar un día sobre los datos introducidos y validados
 
-		public void SumarDia()
+		// 2.1 - Método SumarDia: incrementa un día y, comprueba si es el último de cada mes, en cuyo caso devuelve 1
+		public int SumarDia(int dia, int mes, bool bisiesto)
 			{
-			// sumar dia
+			if ( ( (mes == 4) || (mes == 6) || (mes == 9) || (mes == 11) ) && (dia == 30) ) // día 30 cuando es fin de mes
+				{
+				return 1;
+				}
+			else if (((mes == 1) || (mes == 3) || (mes == 5) || (mes == 7) || (mes == 8) || (mes == 10) || (mes == 12)) && (dia == 31)) // 31
+				{ // día 31 cuando es fin de mes
+				return 1;
+				}
+			else if ((mes == 2) && (bisiesto == false) && (dia == 28)) // día 28 de febrero de un año no bisiesto
+				{
+				return 1;
+				}
+			else if ((mes == 2) && (bisiesto == true) && (dia == 29)) // día 29 de febrero de un año bisiesto
+				{
+				return 1;
+				}
+			else // resto de los días
+				{ 
+				return ++dia;
+				}
 			}
+
+		// 2.2 - Método SumarMes: 
+		public int SumarMes(int dia, int mes, bool bisiesto)
+			{
+			return 0;
+			}
+
+		// 2.3 - Método SumarYear: 
+		public int SumarYear(int dia, int mes, int year)
+			{
+			return 0;
+			}
+
+
 
 
 		// 3. Método para dar formato a la fecha introducida, validada e incrementada
