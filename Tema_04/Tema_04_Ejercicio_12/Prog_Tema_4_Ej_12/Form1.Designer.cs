@@ -139,7 +139,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.MidnightBlue;
-			this.ClientSize = new System.Drawing.Size(463, 374);
+			this.ClientSize = new System.Drawing.Size(463, 409);
 			this.Controls.Add(this.txtDia);
 			this.Controls.Add(this.txtMes);
 			this.Controls.Add(this.lblMes);
