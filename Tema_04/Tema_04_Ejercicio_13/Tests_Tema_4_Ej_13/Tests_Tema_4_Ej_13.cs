@@ -67,7 +67,6 @@ namespace Tests_Tema_4_Ej_13
 
 	*/
 
-	/*
 		[TestClass]
 		public class Tests_Tema_4_Ej_13_Fechas
 			{
@@ -113,10 +112,7 @@ namespace Tests_Tema_4_Ej_13
 				// Assert
 				Assert.IsFalse(actual);
 				}
-
-
 			}
-	*/
 	}
 
 

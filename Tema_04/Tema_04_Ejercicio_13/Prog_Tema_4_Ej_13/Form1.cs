@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -83,8 +84,29 @@ namespace Prog_Tema_4_Ej_13_
 
 		public bool ValidarFechaIntroducida (int dia, int mes, bool bisiesto)
 			{
-			return true;
+			if (((mes == 1) || (mes == 3) || (mes == 5) || (mes == 7) || (mes == 8) || (mes == 10) || (mes == 12)) && ((dia > 0) && (dia < 32)))
+				{ 
+				return true; 
+				}
+			else if (((mes == 4) || (mes == 6) || (mes == 9) || (mes == 11) ) && ((dia > 0) && (dia < 31)))
+				{
+				return true;
+				}
+			else if ( (mes == 2) && (bisiesto == false) && ((dia > 0) && (dia < 29)))
+				{
+				return true;
+				}
+			else if ((mes == 2) && (bisiesto == true) && ((dia > 0) && (dia < 30)))
+				{
+				return true;
+				}
+			else 
+				{ 
+				return false; 
+				}
 			}
+			
+
 
 		// 2. Métodos para incrementar un día sobre los datos introducidos y validados
 
