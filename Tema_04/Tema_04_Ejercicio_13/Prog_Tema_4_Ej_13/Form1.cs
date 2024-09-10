@@ -44,8 +44,8 @@ namespace Prog_Tema_4_Ej_13_
 						// sumar un día
 						int nuevoDia = SumarDia(diaNum, mesNum, bisiesto);
 						int nuevoMes = SumarMes(nuevoDia, mesNum);
-						MessageBox.Show($"{nuevoDia}/{nuevoMes}");
-						int nuevoYear = SumarYear(diaNum, mesNum, yearNum);
+						int nuevoYear = SumarYear(nuevoMes, yearNum);
+
 						}
 					else
 						{
@@ -142,7 +142,7 @@ namespace Prog_Tema_4_Ej_13_
 			}
 
 		// 2.2 - Método SumarMes:  comprueba si es el último día de cada mes, en cuyo caso incrementa el mes
-		//public int SumarMes(int dia, int mes, bool bisiesto)
+		// Se le pasa el valor de la variable 'nuevoDia' que, si ha tomado el valor 1, significa que se está ante un nuevo mes
 		public int SumarMes(int nuevoDia, int mes)
 			{
 			if ((mes == 12) && (nuevoDia == 1)) // último día del año
@@ -159,10 +159,18 @@ namespace Prog_Tema_4_Ej_13_
 				}
 			}
 
-		// 2.3 - Método SumarYear: 
-		public int SumarYear(int dia, int mes, int year)
+		// 2.3 - Método SumarYear: comprueba si es el último día del año, en cuyo caso lo incrementa
+		// Se le pasa el valor de la variable 'nuevoMes' que, si ha tomado el valor 1, significa que se está ante un nuevo año
+		public int SumarYear(int nuevoMes, int year)
 			{
-			return 0;
+			if (nuevoMes == 1)
+				{
+				return ++year;
+				}
+			else 
+				{ 
+				return year; 
+				}
 			}
 
 
@@ -170,7 +178,7 @@ namespace Prog_Tema_4_Ej_13_
 
 		// 3. Método para dar formato a la fecha introducida, validada e incrementada
 
-		public string FormatearFecha()
+		public string FormatearFecha(int numero)
 			{
 			return "";
 			}

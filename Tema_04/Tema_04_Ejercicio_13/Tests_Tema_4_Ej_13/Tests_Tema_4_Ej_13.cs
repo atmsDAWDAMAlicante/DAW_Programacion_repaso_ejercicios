@@ -86,15 +86,16 @@ namespace Tests_Tema_4_Ej_13
 			}
 
 
-
-
 		[TestMethod]
-		[DataRow(31, 1, 1980, 0)]
-		public void TestMethodSumarAnos(int dia, int mes, int year, int expected)
+		[DataRow(6, 1970, 1970)] // comprobación de si se incrementa el año cuando corresponde
+		[DataRow(1, 1978, 1979)]
+		[DataRow(1, 1980, 1981)]
+		[DataRow(3, 2024, 2024)]
+		public void TestMethodSumarAnos(int mes, int year, int expected)
 			{
 			// Act
 			Prog_Tema_4_Ej_13 objetoPrueba = new Prog_Tema_4_Ej_13();
-			int actual = objetoPrueba.SumarYear(dia, mes, year);
+			int actual = objetoPrueba.SumarYear(mes, year);
 
 			// Assert
 			Assert.AreEqual(expected, actual);
