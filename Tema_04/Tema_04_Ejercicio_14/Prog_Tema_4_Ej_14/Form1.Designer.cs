@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 			{
-			this.SuspendLayout();
 			this.lblTitulo = new System.Windows.Forms.Label();
 			this.txtCantidad = new System.Windows.Forms.TextBox();
 			this.btnSuCambio = new System.Windows.Forms.Button();
@@ -44,7 +43,7 @@
 			this.lblTitulo.ForeColor = System.Drawing.Color.Bisque;
 			this.lblTitulo.Location = new System.Drawing.Point(12, 13);
 			this.lblTitulo.Name = "lblTitulo";
-			this.lblTitulo.Size = new System.Drawing.Size(379, 29);
+			this.lblTitulo.Size = new System.Drawing.Size(398, 29);
 			this.lblTitulo.TabIndex = 0;
 			this.lblTitulo.Text = "ƒ Introduce una cantidad en pesetas";
 			// 
@@ -68,6 +67,7 @@
 			this.btnSuCambio.TabIndex = 2;
 			this.btnSuCambio.Text = "Calcular";
 			this.btnSuCambio.UseVisualStyleBackColor = false;
+			this.btnSuCambio.Click += new System.EventHandler(this.btnSuCambio_Click);
 			// 
 			// grpSuCambio
 			// 
@@ -91,7 +91,7 @@
 			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "pesetas";
 			// 
-			// Prog_Tema_4_Ej_14_
+			// Prog_Tema_4_Ej_14
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,7 +103,10 @@
 			this.Controls.Add(this.lblTitulo);
 			this.Name = "Prog_Tema_4_Ej_14";
 			this.Text = "Prog_Tema_4_Ej_14";
+			this.grpSuCambio.ResumeLayout(false);
+			this.grpSuCambio.PerformLayout();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 			}
 
