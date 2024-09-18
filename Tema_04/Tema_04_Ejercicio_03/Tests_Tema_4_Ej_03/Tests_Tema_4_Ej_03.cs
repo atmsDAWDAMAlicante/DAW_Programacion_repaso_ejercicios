@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace Tests_Tema_4_Ej_03
 	{
 	[TestClass]
-	public class Tests_Tema_4_Ej_01
+	public class Tests_Tema_4_Ej_03
 		{
 
 		// Se diseñan dos pruebas unitarias, a las que se les pasarán los parámetros mediante el decorador DataRow

@@ -50,7 +50,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tests_Tema_4_Ej_01.cs" />
+    <Compile Include="Tests_Tema_4_Ej_03.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
