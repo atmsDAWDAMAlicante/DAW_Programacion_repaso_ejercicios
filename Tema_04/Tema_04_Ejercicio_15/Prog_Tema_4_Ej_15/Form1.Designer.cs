@@ -44,7 +44,7 @@
 			this.lblTitulo.ForeColor = System.Drawing.Color.Yellow;
 			this.lblTitulo.Location = new System.Drawing.Point(12, 9);
 			this.lblTitulo.Name = "lblTitulo";
-			this.lblTitulo.Size = new System.Drawing.Size(445, 59);
+			this.lblTitulo.Size = new System.Drawing.Size(471, 59);
 			this.lblTitulo.TabIndex = 0;
 			this.lblTitulo.Text = "ƒ Su cambio (en €uros)";
 			// 
@@ -79,6 +79,7 @@
 			this.btnAccion.TabIndex = 2;
 			this.btnAccion.Text = "Calcular";
 			this.btnAccion.UseVisualStyleBackColor = false;
+			this.btnAccion.Click += new System.EventHandler(this.btnAccion_Click);
 			// 
 			// grpResultado
 			// 
@@ -103,7 +104,7 @@
 			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "(euros)";
 			// 
-			// Prog_Tema_4_Ej_15_
+			// Prog_Tema_4_Ej_15
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

@@ -16,5 +16,24 @@ namespace Prog_Tema_4_Ej_15_
 			{
 			InitializeComponent();
 			}
+
+		private void btnAccion_Click(object sender, EventArgs e)
+			{
+			lblResultado.Text = "";
+
+			bool importeEsNum = double.TryParse(txtEuros.Text, out double importeIntroducido);
+
+			if ((importeEsNum) && (importeIntroducido > 0))
+				{
+
+				}
+			else
+				{
+				lblResultado.Text = "Introduzca una cantidad positiva.";
+				}
+
+
+
+			}
 		}
 	}
