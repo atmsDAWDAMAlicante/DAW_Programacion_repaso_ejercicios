@@ -16,5 +16,26 @@ namespace Prog_Tema_4_Ej_16_
 			{
 			InitializeComponent();
 			}
+
+		private void btnCalcular_Click(object sender, EventArgs e)
+			{
+			lblResultado.Text = "";
+			bool numEsNum = long.TryParse(txtNumero.Text, out long numero);
+
+			if (numEsNum)
+				{
+
+				}
+			else
+				{
+				lblResultado.Text = "Introduce números.";
+				}
+
+			}
+		public long CalcularFactorial()
+			{
+			return 0;
+			}
+
 		}
 	}

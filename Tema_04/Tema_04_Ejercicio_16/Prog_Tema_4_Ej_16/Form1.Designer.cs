@@ -41,7 +41,7 @@
 			this.lblTitulo.Font = new System.Drawing.Font("Comic Sans MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblTitulo.Location = new System.Drawing.Point(59, 20);
 			this.lblTitulo.Name = "lblTitulo";
-			this.lblTitulo.Size = new System.Drawing.Size(299, 60);
+			this.lblTitulo.Size = new System.Drawing.Size(344, 60);
 			this.lblTitulo.TabIndex = 0;
 			this.lblTitulo.Text = "ƒ ! El Factorial";
 			// 
@@ -75,6 +75,7 @@
 			this.btnCalcular.TabIndex = 2;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = false;
+			this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
 			// 
 			// txtNumero
 			// 
@@ -85,7 +86,7 @@
 			this.txtNumero.Size = new System.Drawing.Size(100, 35);
 			this.txtNumero.TabIndex = 1;
 			// 
-			// Prog_Tema_3_Ej_19
+			// Prog_Tema_4_Ej_16
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
